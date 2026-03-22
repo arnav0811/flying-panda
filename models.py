@@ -1,3 +1,16 @@
+"""
+Data models shared across the pipeline
+
+- CrimeSchema: produced by the Crime Schema Generator (Stage 1)
+  and edited by the Red Herring Injector (Stage 2). Contains victim, suspects,
+  evidence chain, and red herrings.
+- Suspect, Clue, RedHerring: components of the CrimeSchema.
+- PlotPointSpec: produced by the Suspense Meta-Controller (Stage 3), tells the
+  Plot Point Generator what kind of scene to write next.
+- PlotPoint: produced by the Plot Point Generator (Stage 4), contains the actual
+  narrative text for one scene plus metadata about what was revealed.
+"""
+
 from dataclasses import dataclass, field
 from typing import Optional
 import json

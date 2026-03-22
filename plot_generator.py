@@ -1,3 +1,20 @@
+"""
+Stage 4: Plot Point Generator 
+
+Takes a PlotPointSpec from the Meta-Controller (Stage 3) and generates
+the actual narrative text for one scene. Uses a sliding context window
+of the last 3 plot points to maintain continuity.
+
+Inputs:
+- CrimeSchema (ground truth, from Stages 1+2)
+- PlotPointSpec 
+- Previous 3 PlotPoints (for context continuity)
+
+Output: a PlotPoint with title, narrative text, and metadata about
+which clues/herrings were revealed. This feeds back into the
+Meta-Controller's state update
+"""
+
 import json
 from models import CrimeSchema, PlotPointSpec, PlotPoint
 from llm import call_llm_json

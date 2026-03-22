@@ -1,3 +1,16 @@
+"""
+Orchestrates the full pipeline.
+
+Runs each stage in sequence:
+  1. Crime Schema Generator -> CrimeSchema
+  2. Red Herring Injector  -> CrimeSchema w/ Red Herrings
+  3. Meta-Controller loop -> PlotPointSpec -> PlotPoint (repeated 15+ times)
+  4. (Plot Generator called inside the loop above)
+  5. Story Compiler -> final story text
+
+Also generates the tension curve visualization and saves all outputs.
+"""
+
 import sys
 import os
 import json
@@ -117,7 +130,7 @@ def run(setting, num_suspects=4):
               f"(target tension: {spec.target_tension:.2f})...")
 
         pp = generate_plot_point(schema, spec, plot_points)
-        controller.update_state(pp)
+        controller.update_state(pp, spec)
         plot_points.append(pp)
 
         print(f"    -> \"{pp.title}\" (tension: {pp.tension_level:.2f})")
@@ -147,12 +160,12 @@ def run(setting, num_suspects=4):
         f.write(f"  Generated: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
         f.write("=" * 70 + "\n\n")
 
-        f.write("PART I: THE CRIME (What Actually Happened)\n")
+        f.write("PART I: THE CRIME\n")
         f.write("-" * 50 + "\n\n")
         f.write(crime_story + "\n\n")
 
         f.write("=" * 70 + "\n")
-        f.write("PART II: THE INVESTIGATION (The Solving Story)\n")
+        f.write("PART II: THE INVESTIGATION \n")
         f.write("-" * 50 + "\n\n")
 
         f.write(f"Total Plot Points: {len(plot_points)}\n\n")
@@ -177,15 +190,11 @@ def run(setting, num_suspects=4):
         json.dump([pp.to_dict() for pp in plot_points], f, indent=2)
     print(f"  Raw plot points: {raw_path}")
 
-    print("\n" + "=" * 60)
-    print("  Done! Your mystery has been generated.")
-    print("=" * 60)
-
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         setting = " ".join(sys.argv[1:])
     else:
-        setting = "a prestigious university research lab"
+        setting = "a university research lab"
 
     run(setting)

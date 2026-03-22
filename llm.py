@@ -1,3 +1,8 @@
+"""
+call_llm (free-text response) and call_llm_json (structured JSON response)
+using GPT-4o-mini.
+"""
+
 import os
 import json
 from openai import OpenAI
@@ -7,6 +12,7 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
+# cheap output price could switch to gpt5-mini but is $2 worth it?
 MODEL = "gpt-4o-mini"
 
 

@@ -1,0 +1,200 @@
+[
+  {
+    "number": 1,
+    "event_type": "obstacle",
+    "subtype": "legal_barrier",
+    "title": "The Locked Door",
+    "narrative": "Detective Mara Chen stepped into the university lab, the crisp scent of antiseptic mingling with the faint trace of burnt coffee. Bright fluorescent lights buzzed overhead, casting a sterile glow over the chaos of scattered research notes and half-finished experiments. She glanced toward Dr. Emily Carter's desk, now an eerie shrine to ambition and intellect, the clutter around it whispering of a genius whose life had been abruptly snuffed out.\n\nAs she approached, a sharp voice piped up from behind her. \"Can I help you, Detective?\" It was Dr. Mark Reynolds, his lab coat buttoned tight, the tension in his stance betraying his nonchalance. \n\n\"I need to gather some statements from the team about Dr. Carter's recent research and conflicts. May I have access to her files?\" Mara replied, her tone steady.  \n\n\"You\u2019ll need a warrant for that,\" he snapped, folding his arms.\n\nMara felt a flicker of frustration as she scanned the room. This was going to be more complicated than she anticipated. The walls of academia weren\u2019t just about knowledge; they were fortified with legalities and hierarchical barriers. \u201cAnd you\u2019re willing to let valuable evidence go out of reach?\u201d she countered, trying to mask the irritation that threatened to surface. \n\nMark shrugged, his gaze shifting toward the floor. \"That's protocol, Detective. We can\u2019t just let anyone rummage through our work. It\u2019s not just about Emily; it\u2019s about the integrity of ongoing research.\"\n\nMara nodded, her mind racing. She needed a warrant to move forward here, and getting that would take time. Time that could mean losing vital evidence. \"Understood. But let\u2019s not forget, Emily\u2019s death is now a matter of public safety. You might want to rethink your stance.\"\n\nAs she left the lab, she could almost hear the clock ticking, each second amplifying the urgency of the investigation, the stakes rising with every delayed minute.",
+    "tension_level": 0.11437133405708541,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 2,
+    "event_type": "clue_discovery",
+    "subtype": "forensic_result",
+    "title": "The Hidden Vial",
+    "narrative": "Detective Mara Chen returned to the lab, determined to comb through every inch of Dr. Emily Carter's workspace. The fluorescent lights buzzed menacingly above her, and the sterile scent of cleaning agents hung in the air like unease. She tightened her grip on her notepad as she navigated through the labyrinth of equipment and research materials strewn about the lab.\n\nAs she moved along a cluttered countertop, her eyes fell upon a small cabinet, slightly ajar. Something glinted within. Curiosity piqued, she approached and pulled it open. There, nestled among stacks of lab reports and petri dishes, sat a vial, its glass surface catching the light in a way that felt all too deliberate.\n\nMara carefully lifted it, her heart racing as she examined the label. It was a neurotoxin, unfamiliar to her and certainly not part of Dr. Carter's usual research repertoire. \"What on earth are you doing here?\" she muttered under her breath, a knot tightening in her stomach. \n\nJust then, Dr. Lisa White entered the lab with a cup of coffee in hand. \"Detective?\" she said hesitantly, her eyes darting to the vial. \"What\u2019s that?\"\n\nMara held it up, her gaze locked on Lisa's face. \"This is a neurotoxin, Lisa. Any idea why it's in the lab?\"\n\nA flicker of alarm crossed Lisa\u2019s features. \"No. I... I don\u2019t know anything about that. Emily wouldn\u2019t have used it.\"\n\nMara noted the tremor in Lisa's voice. \"We\u2019ll see about that. I need to run tests on this. If it\u2019s what I suspect, we might be looking at more than just an untimely death.\" \n\nAs she placed the vial carefully into a protective case, she felt a surge of urgency. This could change everything. The quiet chaos of the lab now felt charged with potential danger, as if the walls themselves were holding their breath, waiting for the revelation of dark secrets buried deep beneath the surface.",
+    "tension_level": 0.2150318445489517,
+    "clues_revealed": [
+      1
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 3,
+    "event_type": "red_herring_encounter",
+    "subtype": "suspicious_item",
+    "title": "Whispers of Conflict",
+    "narrative": "Detective Mara Chen stepped out of the lab, her thoughts a whirlwind of possibilities surrounding the neurotoxin. She needed more context, more insight into Dr. Carter\u2019s relationships with her colleagues. As she made her way down the sterile corridor, she overheard raised voices drifting from a nearby conference room.\n\nCuriosity piqued, she approached the door, pressing her ear against the cool surface. \"You can\u2019t keep changing the terms, Sarah! We all agreed on this!\" The voice was unmistakably Dr. Lisa White\u2019s, sounding sharp and agitated. \n\nMara pushed the door open slightly, peering through the crack. Inside, Dr. Sarah Collins stood rigidly, her hands clenched at her sides. \"I\u2019m not the one being unreasonable! Emily was hoarding the funding like it was her personal stash. We\u2019re supposed to be a team!\" \n\nThe tension in the room thickened as Mara stepped inside, her presence prompting both researchers to freeze mid-argument. \"What\u2019s going on here?\" she asked, her tone sharp.  \n\nLisa quickly composed herself, glancing at Sarah. \"Just discussing some project disagreements, Detective. Nothing serious.\"\n\nMara raised an eyebrow, already piecing together the implications. \"A witness mentioned a heated discussion yesterday, something about research funds?\" \n\nSarah\u2019s eyes widened, panic flickering across her face. \"That\u2019s... that\u2019s not what it sounded like. It was just a misunderstanding!\" \n\nThe detective noted the tremor in Sarah's voice and the urgency in her denial. \"Misunderstanding or not, I\u2019ll need to speak with that witness. If there\u2019s any chance this leads back to Dr. Carter\u2019s death, we can't overlook it.\"\n\nAs she left the room, Mara felt the heavy weight of unresolved conflict hanging in the air, each whispered grievance a potential clue in the twisted web of ambition and rivalry that surrounded Emily's life. The pieces were starting to come together, but every revelation only deepened the murky waters she had to navigate.",
+    "tension_level": 0.2501609295395252,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh3"
+    ],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 4,
+    "event_type": "clue_discovery",
+    "subtype": "physical_evidence",
+    "title": "The Wiped Clean Bench",
+    "narrative": "Detective Mara Chen returned to the lab, her senses heightened after the charged encounter with Lisa and Sarah. The air felt thicker now, as if the walls of academia had absorbed every whisper of discontent. She approached the main workbench, a long expanse of gleaming surface that bore the marks of countless experiments. But something caught her eye\u2014a section of the bench that seemed almost too pristine amid the usual clutter of test tubes and notebooks.\n\nAs she leaned closer, the fluorescent lights reflected off the surface like a spotlight on a darkened stage. There, just at the far edge, Mara spotted faint smudges, irregular patterns that suggested something had been hastily wiped away. She reached into her pocket for her phone, snapping a few photos before running a fingertip across the bench, feeling the coolness of the surface betray a recent cleaning.\n\n\"What do we have here?\" she muttered to herself, kneeling down to inspect more closely. The smudges were unmistakable\u2014traces of the neurotoxin she'd discovered earlier. The realization sent a jolt through her. Someone had been here, and they hadn\u2019t just cleaned up after a simple spill; they\u2019d tried to erase their involvement.\n\nJust then, Dr. Mark Reynolds appeared in the doorway, his expression suddenly guarded. \"Everything alright, Detective?\" \n\nMara stood, her jaw tightening as she met his gaze. \"I think you need to explain why the bench is wiped clean, Mark. It looks like someone wanted to hide something.\"\n\nHis eyes flicked to the bench, and for a fraction of a second, his composure faltered. \"I\u2014I don\u2019t know what you mean. We all clean up after experiments. It\u2019s standard practice.\"\n\nMara\u2019s voice sliced through the tension like a knife. \"Standard practice doesn\u2019t involve cleaning up traces of neurotoxin. This means someone\u2019s covering their tracks\u2014and I intend to find out who.\"",
+    "tension_level": 0.33962429605043176,
+    "clues_revealed": [
+      2
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 5,
+    "event_type": "obstacle",
+    "subtype": "witness_intimidated",
+    "title": "Shadows of Fear",
+    "narrative": "Detective Mara Chen paced the dimly lit corridor, her mind racing with the connections she was beginning to weave together. She needed to talk to the witness who had mentioned the heated argument between Lisa and Sarah. As she descended the stairs to the basement level where the seminar rooms were located, she spotted a figure leaning against the wall, hands shoved deep into the pockets of a hoodie.\n\n\u201cDr. David Klein?\u201d she called, her voice firm yet inviting. The graduate student turned, his eyes widening as they locked onto hers. \"Uh, hi, Detective. I, uh, was just\u2014\u201d \n\n\u201cJust hanging around?\u201d Mara replied, stepping closer. \u201cI need to talk to you about what you witnessed yesterday.\u201d \n\nThe air hung heavy between them as David\u2019s gaze darted to the floor. \u201cI-I don\u2019t know if that\u2019s a good idea. Sarah\u2026 she said I should forget what I saw.\u201d \n\nMara leaned in, sensing a hesitation. \u201cForget? Why would she say that?\u201d \n\nHis breath quickened, and he shifted uncomfortably. \u201cBecause she\u2019s\u2026 she\u2019s close to Emily. If I say anything, it could ruin her career\u2026 or worse.\u201d \n\nMara's heart sank. Intimidation lay thick in the air, suffocating any chance of clarity. \u201cDavid, this is about more than careers. Emily\u2019s dead. We need the truth.\u201d\n\nHe shook his head, panic surging in his eyes. \u201cNo! I can\u2019t. I won\u2019t! They said they\u2019d make sure I got no funding if I talked!\u201d \n\nFrustration coiled within her as he backed away, nearly disappearing into the shadows. She could feel the walls closing in, the stakes rising like a tide against her investigation. David turned, disappearing into the darkness, and the weight of the unanswered questions hung heavily on her shoulders. The truth felt further away than ever.",
+    "tension_level": 0.44490416938291877,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 6,
+    "event_type": "suspect_confrontation",
+    "subtype": "alibi_challenge",
+    "title": "Confrontation in the Lab",
+    "narrative": "Detective Mara Chen found Dr. Sarah Collins in the lab, eyes flickering with a mix of fear and defiance behind her thick-rimmed glasses. The fluorescent lights overhead hummed ominously, casting harsh shadows across the strewn papers and equipment. Mara leaned against a lab bench, arms crossed. \"I just got off the phone with a few of your seminar attendees, Sarah. They seem quite certain you were there the whole time. But you were also in the lab, weren't you?\" \n\nSarah's jaw tightened, her fingers tapping nervously on the bench. \"I was in the seminar. You can check with them. I wasn\u2019t anywhere near Emily\u2019s office during the time of her death.\"  \n\n\"You should know by now that alibis mean little without corroboration,\" Mara countered, her voice low and steady. \"You were alone in the lab most of the day. Plenty of opportunity to... confront Dr. Carter if you desired. And let\u2019s be honest\u2014envy isn\u2019t a stranger in this field. Your feelings towards Emily\u2019s success have been noted.\"\n\nA flush crept up Sarah\u2019s cheeks. \"I admired Emily\u2019s work! I was frustrated, yes, but I would never hurt her. Everyone thought her criticisms were just part of the process. They didn\u2019t mean anything!\" \n\nMara took a step closer, watching as Sarah's composure began to crack. \"But the research funds, Sarah. They were dwindling, and Emily had a stranglehold on them. How much were you willing to risk for a chance to shine?\"  \n\n\"I didn\u2019t\u2014\" Sarah's voice trembled, caught between conviction and doubt.  \n\nMara's eyes narrowed, sensing the fragility of Sarah\u2019s bravado. With every passing moment, the lab felt more like a cage, trapping them both in the tension of unspoken truths. \"You may have an alibi for the seminar, but in this lab, many eyes are always watching. You need to be careful about what you say and to whom. The truth could be more dangerous than you think.\"",
+    "tension_level": 0.5021611825606909,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 7,
+    "event_type": "red_herring_encounter",
+    "subtype": "false_witness",
+    "title": "Deceptive Correspondence",
+    "narrative": "Detective Mara Chen sat at the lab's small conference table, the glow of the computer screen reflecting off her determined eyes. The emails flashed before her: damning words aimed at Dr. Emily Carter, accusing her of sabotaging the research of others. They were traced back to Dr. Mark Reynolds' account, and the tone dripped with resentment. 'This doesn\u2019t feel right,' she muttered, her fingers flying over the keyboard to pull up the details of the account's recent activity.\n\nJust then, Mark entered, his brow furrowed like a storm cloud. \"Detective, you\u2019re not supposed to be in here alone. It\u2019s against protocol to access someone else\u2019s\u2014\" he paused, noticing the emails on the screen. \"What are you doing?\"\n\nMara leaned back in her chair, crossing her arms. \"Looks like someone had a lot to say about Emily, and coincidentally, it all came from your account. Care to explain?\"\n\nHis expression shifted from surprise to indignation. \"That\u2019s absurd! I\u2019d never write something like that! You know my position on her work!\"\n\nMara observed him closely, noticing how his hands fidgeted at his sides. \"You seem awfully nervous for someone who\u2019s innocent. How can I be sure these weren\u2019t your thoughts?\"\n\nMark\u2019s voice rose, a mixture of frustration and fear. \"I was in the lab! I\u2019ve been working on the new project all week! You have to believe me!\"\n\nBut the computer logs painted a different picture. As she scrolled, clues emerged\u2014a remote login from an unknown IP address just before the emails were sent. \"I think you were set up, Mark. This was meant to look like you did it, but it might have been someone else using your account.\"\n\nHis shoulders slumped, the fight leaving him. \"What do I do now?\"\n\nMara felt the weight of the unfolding deception. \"We find out who wanted you to take the fall.\"",
+    "tension_level": 0.5632567575532023,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh2"
+    ],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 8,
+    "event_type": "false_lead",
+    "subtype": "dead_end_lead",
+    "title": "Misunderstood Motives",
+    "narrative": "Detective Mara Chen stood in the bustling campus caf\u00e9, the aroma of freshly brewed coffee mingling with the tension in the air. She had arranged to meet a few students who had witnessed the supposed argument between Dr. Sarah Collins and Dr. Emily Carter the day before the murder. The chatter around her felt distant, a hum against the backdrop of her thoughts.\n\nA group of students occupied a table nearby, their eyes flickering towards her as she approached. One of them, a tall young man with tousled hair, met her gaze. \"You\u2019re here about Sarah and Emily, right?\" he said, his voice low and cautious.\n\nMara nodded, pulling out her notebook. \"I need to know what you heard. Did they argue?\"\n\nHe hesitated, glancing back at his friends before answering. \"Well, sorta. They were talking really loudly\u2014about research funds, I think. It sounded heated, but no threats or anything. Just\u2026 frustration.\"\n\nMara raised an eyebrow, her pen poised over the page. \"Frustration? Did it sound like it was personal?\"\n\n\"No, not really. Just group project stuff, you know? Like, who was getting credit for what. Nothing you\u2019d expect to end in murder, I swear!\" The young man\u2019s tone was defensive, as if anticipating the weight of her investigation.\n\nAs she probed further, the pieces began to fall into place. \"So there were no threats exchanged? No mention of harming Dr. Carter?\"\n\nHe shook his head vigorously. \"No! I mean, we all get tense during projects. It\u2019s not unusual.\"\n\nMara felt the knot of suspicion loosen\u2014a false lead, a misunderstanding that could easily lead her astray. The search for the truth continued, but it was clear now that Sarah\u2019s grievances had been misconstrued. The shadows of doubt receded, leaving a stark clarity in their place.",
+    "tension_level": 0.5468238931714973,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh3"
+    ],
+    "red_herrings_debunked": [
+      "rh3"
+    ]
+  },
+  {
+    "number": 9,
+    "event_type": "suspect_confrontation",
+    "subtype": "interrogation",
+    "title": "Truth Among Shadows",
+    "narrative": "Detective Mara Chen sat across from Dr. Sarah Collins in the lab's sterile conference room, the air thick with tension. The fluorescent lights flickered intermittently, casting a harsh glow on Sarah's face, which was betraying her bravado. Mara leaned forward, resting her elbows on the table, scrutinizing the younger woman. \"You know, Sarah, alibis can be tricky. Your seminar witnesses all confirm you were engaged during the time of Dr. Carter's death. That paints you in a good light. But it also makes me wonder\u2014what were you really doing in the lab earlier that day?\"\n\nSarah's fingers scrambled over her notes, her voice a mix of defiance and anxiety. \"I told you! I was in the seminar, discussing the latest findings. I don't have anything to hide!\" Her wide eyes darted toward the door as if seeking an escape.\n\nMara's gaze remained steady, unwavering. \"But you also claim to have been in the lab conducting experiments. You had access to all the research materials and those neurotoxins. And let's face it\u2014there's a level of ambition in this field that can lead to desperate actions. You felt overshadowed by Emily, didn't you?\" \n\n\u201cNo! I respected her,\u201d Sarah protested, her voice rising, a tremor creeping in. \u201cWe just disagreed on methods. That doesn\u2019t mean I wanted her dead!\u201d\n\n\u201cRespect doesn\u2019t always stem from admiration, Sarah. Your critiques have been noted in the lab, whispers of envy swirling around her achievements. You\u2019re a bright researcher; it\u2019s natural to want recognition.\u201d The silence that followed hung heavily, the tension palpable as Sarah swallowed hard, her bravado fading.\n\n\u201cI didn\u2019t do it,\u201d she whispered, her chin quivering slightly as a tear slipped down her cheek. \"I was busy trying to make a name for myself, not end someone else's life.\"\n\nMara leaned back, studying her. The alibi seemed solid, the seminar attendance corroborated, but the unease simmering beneath the surface hinted at underlying truths still lurking in the shadows. Would Sarah break, or was she just another pawn trapped in a deadly game?",
+    "tension_level": 0.6368952534716991,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 10,
+    "event_type": "obstacle",
+    "subtype": "legal_barrier",
+    "title": "Legal Walls Close In",
+    "narrative": "Detective Mara Chen stood outside the imposing oak doors of the university's legal office, papers clutched tightly in her hand. The hallway felt suffocating, each step echoing with the weight of bureaucracy. She took a deep breath, steeling herself as she pushed open the door. Inside, a stern-faced lawyer, Ms. Phillips, regarded her with a mixture of annoyance and indifference.\n\n\"Detective Chen, I assume this is about Dr. Carter\u2019s case?\" Ms. Phillips said, her voice clipped as she settled behind a massive desk cluttered with legal tomes. \n\n\"Yes. I need access to Dr. Carter\u2019s research files; they hold key information regarding her last experiments. I believe they may contain vital evidence related to her death,\" Mara replied, urgency creeping into her tone.\n\n\"That\u2019s not how it works. The university is bound by privacy laws and regulations concerning proprietary research. You\u2019ll need a court order before I can grant you access to any of those files,\" she stated flatly, her gaze unwavering.\n\nMara's heart sank. Time felt like an enemy now, slipping through her fingers. \"But we\u2019re running out of time! This could help us identify the killer!\" \n\nMs. Phillips leaned back in her chair, unimpressed. \"The law is the law, Detective. I suggest you consult with your superiors about obtaining the necessary legal documentation. Good luck with that.\"\n\nMara clenched her jaw as she left the office, frustration boiling beneath her calm exterior. The obstacles were stacking up, each one more formidable than the last. The killer was still out there, and with every delay, they slipped further into the shadows. Time was not on her side, and the stakes had never felt higher.",
+    "tension_level": 0.7111444541873384,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 11,
+    "event_type": "suspect_confrontation",
+    "subtype": "evidence_presented",
+    "title": "Fractured Alibi",
+    "narrative": "Detective Mara Chen stood in the stark confines of the lab, white walls closing in like a cage. The fluorescent lights buzzed overhead as she faced Dr. Lisa White, who stood with her arms crossed, an expression of defiance etched across her face. \n\n\"You said you were at the coffee shop during Dr. Carter's murder,\" Mara began, her voice steady yet probing, cutting through the tension thickening the air. \"But I have reason to believe you were in this very lab.\"\n\nLisa's eyes darted to the nearby lab bench, her posture stiffening. \"I don't know what you're talking about. I was\u2014\" \n\n\"At Java Jolt?\" Mara interrupted, her tone unyielding. \"Several students spotted you there, but the timeline doesn\u2019t hold up. Why would you have left the lab clean and free of your usual experiments if you weren\u2019t here?\" \n\nLisa opened her mouth but faltered, her bravado cracking. \"I was just\u2026 processing some data. It was late, and I didn\u2019t want anyone to see my failures.\"\n\nMara leaned in, lowering her voice to a whisper that dripped with intensity. \"Failures? You thought about that the night of a murder, knowing full well you had access to the toxins? You were frustrated, weren\u2019t you? Always in Emily\u2019s shadow.\"\n\nA flush crept up Lisa\u2019s cheeks, betraying her composure. \"I respected Emily. I didn\u2019t want her dead!\" she protested, but the quiver in her voice suggested otherwise. \n\nMara held up the vial found on the lab bench, its ominous residue glinting under the harsh lights. \"Then explain this, Lisa. Your late nights in this lab, your knowledge of these compounds. The tension was building, wasn\u2019t it?\"\n\nLisa\u2019s breath hitched, the room swirling around them. \"I... I just wanted to be recognized!\" she finally admitted, desperation clawing at her. \n\nMara\u2019s eyes narrowed, sensing the cracks in Lisa\u2019s story widening. Each confession felt like another step closer to the truth, but she knew she had to tread carefully; the walls closing in could swallow them both whole.",
+    "tension_level": 0.7593236918185393,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 12,
+    "event_type": "clue_discovery",
+    "subtype": "forensic_result",
+    "title": "The Video Revelation",
+    "narrative": "Detective Mara Chen sat in the dimly lit security office, the hum of machinery surrounding her like a swarm of anxious bees. Her eyes flickered across the grainy footage on the screen, each frame a possible key to unraveling the complicated web of deception surrounding Dr. Emily Carter\u2019s murder. She leaned closer, the fluorescent lights above casting sharp shadows on her determined face as the timestamp glided across the bottom: 2:45 PM. Just fifteen minutes before the murder.\n\nOn the screen, Dr. Michael Thompson appeared, his expression taut and distracted, as he hurriedly exited the lab's side door. Mara's breath quickened; she replayed the scene, watching the way his fingers fidgeted with his lab coat, the anxious glances he cast behind him. The video looped again, each pass etching doubt in her mind. \n\nShe shot a glance at Officer Martinez, who stood by her side, his brow furrowed. \u201cWhat do you make of it?\u201d \n\n\u201cTiming is everything,\u201d Mara replied, her heart racing. \u201cHe leaves the lab right around the estimated time of death. The others have solid alibis\u2026 but Thompson didn\u2019t report his departure to anyone. It raises questions.\u201d \n\nMartinez nodded, his eyes narrowing as he peered at the screen. \u201cDo you think he went back? Or is he hiding something?\u201d \n\n\u201cEither option requires a deeper dive. We need to confront him. I\u2019m not convinced his colleagues\u2019 accounts are as airtight as they seem.\u201d \n\nThe tension in the room thickened, the air crackling with the weight of unanswered questions. As the video played one more time, Mara felt the chill of impending confrontation settle in her bones. The shadows of the past loomed ever larger, and she was determined to illuminate the hidden truths lurking within them.",
+    "tension_level": 0.8654207694161083,
+    "clues_revealed": [
+      3
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 13,
+    "event_type": "clue_discovery",
+    "subtype": "surveillance_footage",
+    "title": "Unraveling the Web",
+    "narrative": "Detective Mara Chen sat in the university's chilly IT office, the glow of computer monitors illuminating her focused expression. The air was thick with the smell of stale coffee and the faint hum of servers. She leaned in, eyes glued to the screen as she sifted through the emails retrieved from Dr. Thompson\u2019s account. The clicking of keys echoed in the subdued office, breaking the silence.\n\nThen, a subject line caught her attention: \"Possible Funding Losses.\" Heart racing, she opened the email, revealing a thread of exchanges that painted a vivid picture of Thompson\u2019s growing anxiety over his research's future. \n\n\"If Emily leaves the lab, where does that leave me?\" Mara read aloud, her voice barely a whisper as the implications settled heavily around her. \n\nThe words dripped with desperation. \n\n\"I can\u2019t afford to lose the grant. It\u2019s my lifeline. Emily must understand how impactful her decisions are for our work.\"\n\nMara\u2019s fingers tingled with the thrill of the discovery, each keystroke a step closer to a motive. Images of Thompson\u2019s troubled face rushed back into her mind. \"He didn\u2019t just lose a colleague\u2014he stood to lose everything.\"\n\nJust then, Officer Martinez entered the room, drink in hand. \"What did you find?\" \n\n\"Emails showing that Thompson was panicking about funding if Dr. Carter left him. His ambition was tied to her success, and fear can make people do reckless things,\u201d Mara said, her voice laced with intensity.\n\nMartinez frowned, shaking his head. \"That\u2019s damning. Still, we need more than just words to build a case.\"\n\n\"We will,\" Mara replied, determination sparking in her eyes. The labyrinth of motives and fears was just beginning to unfold, and she was ready to chase down every lead, ready to confront the darkness that lay ahead.",
+    "tension_level": 0.9719610526615746,
+    "clues_revealed": [
+      4
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 14,
+    "event_type": "obstacle",
+    "subtype": "access_denied",
+    "title": "Access Denied",
+    "narrative": "Detective Mara Chen approached the locked door of the faculty office, her mind buzzing with the newly uncovered motives swirling around Dr. Thompson. She\u2019d tracked down another email thread that hinted at meetings with donors, promising to reveal funding strategies that could connect him to Emily\u2019s murder. But the door stood resolute, its heavy steel frame cold to the touch. The sign next to it read 'Authorized Personnel Only.'\n\n\"Damn it,\" she muttered under her breath, her fingers tapping impatiently against her thigh. Beneath her frustration, a gnawing sense of urgency pulsed. Every minute wasted was a minute lost in the investigation, and she could almost feel Emily\u2019s ghost lingering nearby, demanding justice.\n\n\u201cLocked out, Detective?\u201d Officer Martinez\u2019s voice broke through her thoughts, a mix of sympathy and concern on his face. He had followed her, intrigued by her focused determination. \n\n\"I need to access those files. They could be critical. The university can\u2019t just keep me from finding the truth,\" she replied, her jaw clenched.\n\nMartinez stepped closer, scrutinizing the door, as if willing it to yield. \u201cWe can file a request, but it\u2019ll take time.\u201d\n\n\u201cTime isn\u2019t something we have,\u201d she snapped, frustration spilling over. Her mind raced through alternatives, but they all led back to this impassable barrier. \n\n\u201cNo one is above the law, including the university,\u201d he said finally, a hint of resolve in his voice. \u201cBut whatever is in there might not wait for bureaucracy.\u201d\n\nMara let out a breath, her frustration mixing with urgency. \"Then we find another way. We can\u2019t let them shield the truth. Emily deserves\u2014\" She paused, the weight of the words heavy between them. The stakes were rising, and with each passing moment, the walls of secrecy felt more constricting. She pressed a palm against the door, as if willing it to open, then turned away, determination hardening her resolve for the fight ahead.",
+    "tension_level": 1.0,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 15,
+    "event_type": "false_lead",
+    "subtype": "misinterpreted_evidence",
+    "title": "Framing the Innocent",
+    "narrative": "Detective Mara Chen perched on the edge of an uncomfortably rigid chair in the quiet corner of the lab, the austere whiteness of the walls making her feel exposed. She scrolled through the recent emails pulled from Dr. Mark Reynolds' computer, the words dancing mockingly on the screen. \"You\u2019ve pushed too far, Emily. Change your direction or else,\" one email read, its aggressive tone striking. It felt like a snowball gaining momentum, but something about it didn\u2019t sit right. \n\nMara\u2019s fingers tapped against the desk, frustration mounting as she flipped to the next thread. Each message screamed hostility toward Dr. Carter, but the boldness of the threats seemed at odds with the Mark she had met\u2014he was reserved, almost timid. \n\n\"There\u2019s no way he could write something like this,\" she murmured to herself. Just then, Officer Martinez appeared at the doorway, a coffee cup in hand, eyebrows raised. \n\n\u201cStill at it?\u201d he asked, glancing at the screen. \n\n\u201cIt\u2019s too aggressive,\u201d Mara said, exhaling sharply. \u201cSomething feels orchestrated.\u201d \n\nMartinez stepped closer, peering at the screen. \u201cShould we bring him in for questioning?\u201d \n\n\u201cNot yet. I\u2019ll pull computer logs. I need to see if this was all him.\u201d \n\nMoments later, the forensic analyst\u2019s voice crackled through the radio. \u201cDetective Chen, you need to see this. Dr. Reynolds' account was accessed remotely just before those emails were sent.\u201d \n\nMara\u2019s heart raced. \"He was framed... But why?\" The realization hit her like a cold wave, the pieces of the puzzle shifting into a new formation. She could feel the tendrils of the investigation tightening around her, pulling her deeper into a labyrinth of deception. The suspects\u2019 faces swam in her mind with renewed urgency. Could someone be trying to lead her astray?  \n\n\u201cLooks like we\u2019re back to square one,\u201d she muttered, her resolve hardening. \u201cTime to find the real puppet master.\u201d",
+    "tension_level": 0.9839831536323412,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh2"
+    ],
+    "red_herrings_debunked": [
+      "rh2"
+    ]
+  },
+  {
+    "number": 16,
+    "event_type": "clue_discovery",
+    "subtype": "witness_testimony",
+    "title": "A Break in the Shadows",
+    "narrative": "Detective Mara Chen stepped into the labyrinthine halls of the research building, her mind ablaze with the emerging threads of deceit. The fluorescent lights buzzed above her, casting a sterile glow on the white walls, but she felt a creeping darkness in the air. She had just wrapped up her interview with Dr. Lisa White, the postdoctoral researcher whose caf\u00e9 alibi had seemed feeble. Now, she sought Dr. White again, armed with a burning question.\n\nMara found her in a small conference room, nervously fiddling with a pen. \"Dr. White, I need to clarify a detail from our previous conversation. You mentioned seeing Dr. Thompson in the lab around the time of Dr. Carter's murder. Can you tell me exactly what you witnessed?\"\n\nLisa glanced up, biting her lip. \"I saw him working at his station, right before I left for the coffee shop. I thought he was just focused, you know? But... he was definitely there. I\u2019m sure of it.\"\n\nMara leaned forward, intrigued. \"How certain are you? Did you interact with him?\"\n\n\"No, I didn\u2019t speak to him. I just... saw him. I was about to ask him a question, but I got caught up in my own thoughts and left before I could.\"\n\nThe detective\u2019s pulse quickened. \"This could provide him with an alibi. But why would you wait to mention it?\"  \n\n\"I didn\u2019t realize it was crucial until now!\" Lisa exclaimed, her voice trembling. \"I just... I didn\u2019t want to get involved. This whole thing is terrifying.\"\n\nMara stayed quiet, weighing the implications. A solid alibi for Thompson would complicate things. She had to dig deeper. The shadows were thickening, and as the words echoed in her mind, she felt the walls closing in around her, each breath an echo of the lingering uncertainty.",
+    "tension_level": 1.0,
+    "clues_revealed": [
+      5
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  }
+]

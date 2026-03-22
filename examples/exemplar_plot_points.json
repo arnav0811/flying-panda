@@ -1,0 +1,210 @@
+[
+  {
+    "number": 1,
+    "event_type": "obstacle",
+    "subtype": "evidence_tampered",
+    "title": "Lab of Shadows",
+    "narrative": "Detective Mara Chen stood in the cold, sterile lab of Dr. Emily Carter, the remnants of a once-bustling research environment now cloaked in shadows. The fluorescent lights flickered overhead as she scanned the chaos left behind\u2014a beaker shattered on the floor, papers strewn like leaves in a storm. It was a stark contrast to the groundbreaking work Emily was known for. \n\nMara approached the workstation, her eyes narrowing at the sight of a laptop, its screen aglow with cryptic data. The sound of hurried footsteps approached, and she turned to see Dr. Sarah Mitchell, her face pale and eyes wide. \n\n\u201cDetective, you must have questions,\u201d Sarah stammered, wringing her hands. \u201cBut we can\u2019t touch anything until the forensic team gets here.\u201d \n\nMara glanced back at the laptop, noting the faint aroma of burnt coffee lingering in the air. As Sarah spoke, Mara felt a chill creep down her spine. \u201cIs anyone monitoring the lab's security footage?\u201d she asked, focusing on Sarah\u2019s anxious demeanor. \n\n\u201cNo, it must be under maintenance,\u201d Sarah replied, her voice quivering. \n\nBefore Mara could seek further clarification, a technician burst through the door, his face flushed. \u201cDetective, you need to see this. The data from the lab's servers has been wiped clean.\u201d \n\nMara\u2019s stomach twisted. Vital evidence had evaporated into thin air, as if Dr. Carter's work was being erased from existence. She felt the weight of the room close in on her. \u201cGet me a list of who accessed the server last,\u201d she ordered, her heart racing. Time was running out, and with each passing second, the truth slipped further away, buried under layers of deception and fear.",
+    "tension_level": 0.11597654503775501,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 2,
+    "event_type": "clue_discovery",
+    "subtype": "forensic_result",
+    "title": "The Coffee Mug Clue",
+    "narrative": "Detective Mara Chen pushed through the lab door, the remnants of chaos still haunting the sterile space. The fluorescent lights buzzed overhead, flickering like the heartbeat of the room, and her eyes danced over the landscape of destruction. Amidst the scattered papers and shattered glass, her gaze fell upon the coffee station tucked in the corner, a stark contrast to the chaos surrounding it. \n\nAs she stepped closer, her heart sank. There, nestled among the mismatched mugs, was one that stood out\u2014ceramic, white with a chip on the rim, emblazoned in bold letters: 'Emily.' The mug was still warm to the touch. \n\n\u201cDetective, I found it!\u201d Dr. Sarah Mitchell's breathless voice cut through the thick air. She rushed in behind Mara, her eyes darting nervously between the mug and Mara\u2019s stoic expression. \n\nMara turned, holding the mug up as if it were a fragile artifact. \u201cThis was Emily\u2019s. It means she was here, in the lab, at the time of her murder.\u201d \n\nSarah\u2019s face paled further, her hands clenched into fists at her sides. \u201cI saw her earlier. She was working on something... an important presentation for the grants. I didn\u2019t realize\u2026\u201d \n\n\u201cDid you see her leave?\u201d Mara pressed, the weight of urgency creeping into her voice. \n\n\u201cNo, I was busy in the library. I thought she was just in the lab,\u201d Sarah stammered, her voice barely above a whisper. \n\nMara set the mug down, a sense of foreboding settling over her. The pieces were beginning to fall into place, but with each clue, the labyrinth of betrayal became more intricate. Time was running out; someone knew more than they were letting on, and Mara was determined to shine a light into the darkest corners of this tragedy.",
+    "tension_level": 0.1813185329855826,
+    "clues_revealed": [
+      1
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 3,
+    "event_type": "red_herring_encounter",
+    "subtype": "suspicious_item",
+    "title": "Eerie Evidence in the Lab",
+    "narrative": "Detective Mara Chen stepped cautiously around the cluster of desks, her keen eyes scanning every detail, every scrap of evidence. A sense of unease tightened her chest as she approached Dr. Emily Carter's workstation again. The sterile lab felt somehow more oppressive, the fluorescent lights buzzing in a way that matched her racing thoughts.\n\nSuddenly, a forensic technician burst through the door, a file clutched in her hand. \"Detective, you need to see this right now!\" The technician placed the file on Emily's desk, opening it to reveal a photo of a coffee cup. A simple white mug\u2014much like the one Mara had already found\u2014but this one bore the distinctive fingerprints of Dr. Sarah Mitchell.  \n\nMara's heart sank. \"Is this a joke?\" \n\n\"No, ma'am. It was found near Emily's desk\u2014part of the crime scene. And look here...\" The technician flipped the page to reveal the forensic report, the words 'traces of rare neurotoxin found' jumping off the page like a dagger.\n\n\"The neurotoxin?\" Mara echoed, her mind racing with implications. \"This points directly at Sarah!\"\n\nJust then, Sarah appeared again, her eyes wide and fearful. \"What are you doing here?\" she asked, her voice trembling. \n\n\"We found a coffee cup with your fingerprints near Emily's desk,\" Mara said, her voice steady yet probing. \"And it had traces of a neurotoxin.\"\n\nSarah's face drained of color. \"That can't be! I left my cup in the break room hours before! I was studying, I swear!\"\n\nMara felt the tension in the air, heavy like a fog. But Sarah\u2019s frantic demeanor only fueled her instinct. Quickening her pace around the lab, she headed toward the break room, determined to uncover the truth. If Sarah was telling the truth, she would find a way to discredit this evidence that felt all too convenient, and the tension in the room seemed to swell like a storm on the horizon.",
+    "tension_level": 0.2642006591725888,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh1"
+    ],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 4,
+    "event_type": "suspect_confrontation",
+    "subtype": "alibi_challenge",
+    "title": "Confronting the Lead Researcher",
+    "narrative": "Detective Mara Chen stood before Dr. Michael Reynolds in the dimly lit corner of the lab, her arms crossed, gaze unwavering. The sterile surroundings felt charged, the air thick with unspoken tension. Reynolds, a tall man with dark hair flecked with gray, shifted nervously, the sleeves of his lab coat slightly wrinkled, as if he had hurried to present himself.\n\n\"You claim you were in a meeting, yet several colleagues mentioned you left early,\" Mara stated, her voice low but firm. \n\nMichael's brow furrowed, his eyes narrowing. \"I had to address a lab emergency, Detective. Emily\u2019s work was critical, and there were issues with the latest batch of samples.\"\n\nMara stepped closer, her tone slicing through the air. \"Was that the real reason, or was it something else? I\u2019ve heard whispers of personal betrayal\u2014Emily rejecting your advances for someone else. Is that why you stormed out?\"\n\nHis expression darkened, lips pressing into a thin line. \"You\u2019re making a mistake. I respected Emily's professionalism. It was purely platonic!\"\n\n\"Platonic?\" she echoed, taking a step back to let the statement hang heavily between them. \"But you had the highest level of access to the lab. You could have manipulated her equipment, set up an accident. Just a flick of a switch, and\u2014\"\n\n\"That\u2019s absurd!\" Michael interrupted, his voice rising. He glanced toward the door, as if preparing to flee. \"I\u2019d never harm her!\"\n\nMara leaned in, her eyes steady. \"But you were the first to arrive after the murder happened, weren\u2019t you? Your alibi has cracks, Michael. I\u2019ll find them.\"\n\nHis facade slipped for just a moment, a flicker of something dark behind his eyes, before he regained his composure. \"You\u2019ll find nothing. I was at the meeting, and they can confirm it.\"\n\nDetermined, Mara turned on her heel, leaving Michael\u2019s tightened fists and the simmering unease behind her. Time was of the essence, and she felt the walls around her closing in as she sought to unravel the truth from his tangled web of deceit.",
+    "tension_level": 0.34183322632653795,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 5,
+    "event_type": "obstacle",
+    "subtype": "suspect_flees",
+    "title": "The Escape of Dr. Mitchell",
+    "narrative": "Detective Mara Chen stalked back into the lab, her mind churning with the implications of her confrontation with Michael Reynolds. An unsettling silence enveloped the room, amplifying the sound of her footsteps. Just as she was about to approach Sarah Mitchell again, the sharp sound of a door slamming echoed through the corridor, causing her to spin on her heel. \n\n\"No! Sarah!\" she shouted, recognizing the fleeting figure darting through the lab's exit. The postdoctoral researcher had bolted, her lab coat flaring like a white flag. \n\nMara dashed after her, heart pounding against her ribs, the shouts of her fellow officers reverberating in the distance. \"Stop! You need to talk to me!\" \n\nSarah's footsteps echoed against the tiled floor, desperation fueling her speed. She hurled herself through the emergency exit, the alarm wailing behind her as Mara burst through moments later, the cold breeze lashing against her face. \n\nThe campus grounds spread out before her, a maze of brick walkways and shadows. She spotted Sarah sprinting toward the parking lot. Mara pushed forward, her breath coming in sharp bursts. \"You can\u2019t run forever, Sarah! We need to clear this up!\" \n\nBut Sarah's gaze darted around, calculating. With a quick glance over her shoulder, she veered toward the vehicle section, fumbling for her keys. \n\nMara\u2019s heart sank; if Sarah slipped away now, the investigation would falter. \"Stop! I swear I will make this right if you just talk to me!\" She wasn\u2019t sure if Sarah could hear her over the pounding of adrenaline in her ears, but she felt a surge of determination. \n\nAs Sarah reached her car, the look of fear plastered across her face turned into something darker\u2014desperation mixed with resolve. With a swift motion, she unlocked the door and slipped inside, hands trembling as she fumbled the keys. Mara sprinted forward, but she was too late; the engine roared to life, and Sarah slammed the door shut just as the tires screeched against asphalt, sending a cloud of dust and gravel into the air.  \n\nMara stood frozen, frustration bubbling within her. The stakes were higher now, the labyrinth of deception twisting further, and Sarah had just become the rabbit in this deadly chase\u2014a lead that may very well slip into the night without a trail to follow.",
+    "tension_level": 0.46477404206741557,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 6,
+    "event_type": "clue_discovery",
+    "subtype": "physical_evidence",
+    "title": "Crucial Footage Unveiled",
+    "narrative": "Detective Mara Chen settled into the dimly lit security office, the glow of multiple screens illuminating her face. She rubbed her temples, the adrenaline of the chase still coursing through her veins as she prepared to review the lab's security footage. A faint hum of machinery surrounded her, creating a cocoon of isolation as she fast-forwarded through hours of mundane activity. Suddenly, she paused, eyes narrowing at the timestamp\u2014a figure emerged in the frame.\n\nMara squinted at the screen, her heart quickening. It was Michael. The video showed him leaving the lab just after Emily was last known to be alive. The way he hurriedly exited, glancing over his shoulder, sent a chill down her spine. \n\nMumbling to herself, she replayed the segment, watching as his form disappeared into the corridor. \"What were you doing, Michael?\" she whispered, the unease crawling back into her stomach.\n\nJust then, a sharp knock broke her focus. \"Detective?\" It was Officer Lee, popping his head through the door. \"What do you have?\"\n\nMara gestured for him to enter, keeping her eyes glued to the screen. \"Look at this. Michael leaving the lab shortly after Emily was last seen. It doesn\u2019t fit his alibi.\"\n\nOfficer Lee leaned forward, scrutinizing the video. \"He could have been just\u2026 grabbing something, right?\"\n\n\"Or he could have been doing something far worse,\" Mara replied, her voice low and steady. The implication hung in the air, heavy like a storm ready to unleash. Michael had been there, and now she had the proof that could shatter his facade. \n\nWith newfound determination, she stood up, the clip still looping in her mind. The pieces of the puzzle were finally starting to align, and she was ready to confront Michael with this damning evidence. She turned to Officer Lee, the tension crackling like static. \"Let\u2019s go. Michael\u2019s not off the hook yet.\"",
+    "tension_level": 0.5712895733724835,
+    "clues_revealed": [
+      2
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 7,
+    "event_type": "false_lead",
+    "subtype": "alibi_debunked_innocent",
+    "title": "Unraveling the Web",
+    "narrative": "Detective Mara Chen leaned against the cool metal of the break room door, her mind racing as she processed the latest revelation. The coffee cup, embossed with Sarah\u2019s name, lay like a noose tightening around the postdoctoral researcher\u2019s neck. But something didn\u2019t sit right; this was too convenient, too tidy. \n\nShe opened the door and stepped inside, the fluorescent lights buzzing overhead, casting stark shadows across the countertop. Her eyes fell upon the remnants of a coffee station, a half-empty carafe cooling on the burner. \n\n\"Officer Lee, pull up the footage from the break room. I want to know when Sarah left that cup,\" she instructed, urgency lacing her voice. \n\nWhile she waited, Mara absently traced the rim of a nearby mug. Questions swirled in her mind\u2014if Sarah was innocent, then what was the motive behind the staged evidence? The chime of a notification broke her thoughts.\n\n\"Here we go,\" Officer Lee said, his fingers deftly working the controls. The grainy footage flickered to life on the monitor, revealing Sarah entering the break room, her hair a frizzled halo as she poured herself a cup of coffee, chatting idly with a colleague. \n\nMara leaned closer, focusing intently. The time stamp read 1:15 PM. Sarah\u2019s cup was left unattended on the counter at 1:18 PM, but the visual revealed that she had exited the room just moments after, heading back toward the lab. \n\n\"That\u2019s clear,\" Mara murmured, a sense of relief mixed with irritation washing over her. \"She left her cup here before the murder occurred.\" \n\nOfficer Lee nodded, a frown deepening on his brow. \"So, the neurotoxin connection\u2026?\"\n\n\"A red herring. Someone wanted us to believe Sarah did this. We need to find out who planted that evidence,\" Mara replied, determination sharpening her gaze. The false lead had crumbled, but the web of deceit only seemed to thicken, wrapping tighter around the real culprit lurking in the shadows.",
+    "tension_level": 0.5514873489082314,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh1"
+    ],
+    "red_herrings_debunked": [
+      "rh1"
+    ]
+  },
+  {
+    "number": 8,
+    "event_type": "red_herring_encounter",
+    "subtype": "false_witness",
+    "title": "Tangled Evidence Unfolds",
+    "narrative": "Detective Mara Chen stood in Emily's lab, the sterile scent of chemicals stinging her nostrils. Sunlight filtered through the large windows, casting stark lines on the floor, but the atmosphere felt heavy with accusation. While sifting through the remnants of Emily's work, her eyes caught a crumpled piece of paper peeking from the corner of the wastebasket. Curious, she leaned down, her fingers brushing against the cool metal of the bin.\n\nAs she unfolded the notes, her heart raced\u2014there, in Jennifer's familiar scrawl, were thoughts and critiques about methodologies that Emily had employed in her latest experiments. Phrases like \"unreliable results\" and \"potential for error\" leapt from the page, hinting at professional disagreements between the two women.\n\n\u201cOfficer Lee, come take a look at this,\u201d Mara called, scrutinizing the annotations more closely. \u201cIt seems Jennifer had some strong opinions about Emily\u2019s work.\u201d\n\nLee approached, peering over her shoulder. \u201cCould this mean a confrontation? A motive?\u201d\n\n\u201cMaybe,\u201d Mara replied, a frown creasing her brow. \u201cBut something feels off\u2026 I need to run a forensic analysis on these notes.\u201d \n\nJust then, Jennifer entered the lab, her eyes widening as she spotted Mara holding the crumpled paper. \"What is that?\" \n\nMara locked eyes with her, the tension thickening in the air. \u201cYour notes, Jennifer. Care to explain?\u201d\n\nJennifer\u2019s voice trembled slightly. \u201cI never meant for those to be seen. They were old frustrations\u2026 not about the current project.\u201d \n\nMara studied her, silence hanging heavily as the implications twisted like a noose. This could easily become a dead end. \"We\u2019ll see if they truly hold any relevance to the case or if this is just another layer of deceit.\" She knew the truth was still buried deeper, waiting to be unearthed beneath the fragile web of lies.",
+    "tension_level": 0.6043553749747889,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh3"
+    ],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 9,
+    "event_type": "clue_discovery",
+    "subtype": "document_found",
+    "title": "Toxic Truth Unveiled",
+    "narrative": "Detective Mara Chen stood at the workstation, the fluorescent lights casting a harsh glow over scattered papers and vials. The muted beeping of her phone broke the silence, and she snatched it up, her pulse quickening as she read the incoming message. It was from the toxicology lab\u2014results were in.\n\n\u201cLee, come here!\u201d she called, urgency threading through her voice. Officer Lee rushed in, his brows furrowed, sensing the shift in the air.\n\n\u201cWhat is it?\u201d\n\nMara held the phone to her chest, feeling a mix of dread and anticipation. \"I just got the toxicology report on Emily.\"\n\nLee leaned closer, his eyes widening as she tapped the screen, displaying the findings. A rare neurotoxin was present in Emily\u2019s bloodstream, its effects potent and lethal. \u201cWe have confirmation,\u201d Mara said, her voice steady yet laced with disbelief. \"She was poisoned.\"\n\nLee's expression hardened, the implications washing over him. \u201cPoisoned? But how? Who had access to that?\u201d\n\nMara swallowed hard, her mind racing through the names of their suspects. \"It\u2019s a specific toxin, not something you find at the local pharmacy. Someone had to know about it\u2014know how to use it.\"\n\nThe tension in the room thickened, the air feeling charged with the weight of the revelation. \u201cThis changes everything,\u201d Lee murmured, running a hand through his hair. \u201cWe need to speak to everyone again\u2014revisit their alibis.\u201d\n\nMara nodded, her resolve tightening. \"And I need to take a closer look at the lab supplies. If someone got in and tampered with her materials\u2026 we\u2019ll find the source.\"\n\nAs she turned to leave, the report slipped from her fingers, fluttering to the floor. She picked it up, glaring at the printed words that had the power to unravel the entire web of deceit they were entangled in. Each step felt heavier now; they were on the cusp of something much darker than she had anticipated.",
+    "tension_level": 0.6636507715958203,
+    "clues_revealed": [
+      3
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 10,
+    "event_type": "false_lead",
+    "subtype": "dead_end_lead",
+    "title": "The Fractured Evidence",
+    "narrative": "Detective Mara Chen stood with her arms crossed, the fluorescent lights flickering above her like the pulse of a dying star. In front of her lay a forensic analysis report, crisp and stark against the sterile countertop of Emily's lab. The findings whispered secrets she had hoped would lead to clarity but instead revealed the cracks in their investigation.\n\n\"Lee, look at this,\" she called, summoning Officer Lee to her side. He stepped closer, tension visible in the lines of his face, as he studied the detailed notes. \n\n\"What\u2019s the news?\" he asked, his voice low. \n\n\"These notes we found in the wastebasket\u2014they're dated weeks before Emily's murder. This isn\u2019t evidence of a recent confrontation, just old grievances between her and Jennifer. Nothing here even remotely suggests motive.\"\n\nLee's shoulders sagged, disappointment mingling with frustration. \"So Jennifer is off the hook?\"\n\nMara bit her lip, the weight of the realization settling like lead in her stomach. \"It seems so. Whoever planted that evidence wanted us to follow a false trail. The fragility of it all\u2026 it's almost too easy.\"\n\nShe glanced around, the sterile environment suddenly feeling suffocating. \"We need to revisit everything\u2014focus on who really had access to Emily\u2019s supplies and how this toxin ended up in her system.\"\n\nAs Mara turned the report over in her hands, her mind raced through the implications. The neat web of evidence was fraying, and she could sense the unpredictable chaos that lay just beyond the horizon of this case. They were chasing shadows, and each step deeper into the investigation only drew her closer to a darkness she could scarcely comprehend.",
+    "tension_level": 0.617821325512739,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh3"
+    ],
+    "red_herrings_debunked": [
+      "rh3"
+    ]
+  },
+  {
+    "number": 11,
+    "event_type": "clue_discovery",
+    "subtype": "forensic_result",
+    "title": "Whispers of Conflict",
+    "narrative": "Detective Mara Chen leaned against the cold metal counter of the lab\u2019s break room, the fluorescent lights buzzing above her like a swarm of angry insects. She had called in the lab staff one by one, determined to unravel the tangled web of motives that surrounded Emily\u2019s death. The air was thick with tension, a palpable reminder of the shock that had rippled through the university. \n\nAs Jennifer settled into the chair across from her, Mara wasted no time. \"Jennifer, I need you to think back to the days just before Emily was killed. Did you notice anything unusual? Any disagreements or arguments?\" \n\nJennifer hesitated, her fingers nervously fiddling with the hem of her lab coat. \"Well, there was one time...\" Her voice trailed off. \n\nMara leaned closer. \"Go on.\"\n\nThe younger woman took a breath, her expression shifting from uncertainty to clarity. \"I overheard a fight between Michael and Emily last month. They were in the supply room, and it got pretty heated. I couldn\u2019t catch all the words, but... it sounded serious.\"\n\nMara\u2019s heart raced, a sharp spark igniting in her gut. \"What were they arguing about?\" \n\nJennifer shook her head, a frown deepening her brow. \"I couldn\u2019t hear everything. But it sounded like something about the project funding. Emily was pushing for some changes, and I think Michael didn't like it. He was... angry. Really angry.\"\n\nMara scribbled down the details, each stroke of the pen a step closer to understanding Michael's potential motive. \"So you think Michael might have had a reason to want to harm Emily?\"\n\n\"I don\u2019t know, Detective. I just know what I heard. But it didn\u2019t sound good.\" \n\nAs Jennifer\u2019s words hung in the air, Mara felt the weight of a new possibility dawning upon her. The shadows of suspicion were shifting once again, and she was closer to uncovering the truth than ever before.",
+    "tension_level": 0.7187496670277834,
+    "clues_revealed": [
+      4
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 12,
+    "event_type": "red_herring_encounter",
+    "subtype": "suspicious_item",
+    "title": "Misleading Correspondence Unveiled",
+    "narrative": "Detective Mara Chen stood in the dimly lit office shared by Dr. Mark Thompson, the soft hum of the computer echoing against the walls. The scent of stale coffee lingered in the air as she sifted through the cluttered desk, papers stacked haphazardly alongside half-empty cups and forgotten snack wrappers. A faint click drew her attention to the screen, where a series of email screenshots lay open, their content glaring up at her like an accusation.\n\nAs she squinted, the words leaped out: 'I felt dismissed in our last discussion.' The message had a tone of frustration that made her stomach twist. \u201cLee!\u201d she called, her voice a mixture of urgency and dread, as she summoned Officer Lee into the cramped space.\n\n\u201cLook at this,\u201d she said, gesturing toward the screen, the bright light casting sharp shadows on her face. \u201cThese emails between Mark and Emily suggest he felt belittled by her. This could indicate motive.\u201d \n\nLee scanned the messages, his brow furrowing. \u201cBut is it enough to suggest he\u2019d kill her?\u201d\n\nMara leaned closer, her instincts churning. \u201cIt could be, but let\u2019s dig deeper.\u201d\n\nShe began to scroll, the clicks of the mouse echoing like a countdown. Then, abruptly, she froze, her heart hammering. The full thread revealed itself, and her eyes widened. \u201cWait a minute... Mark was actually offering to help Emily with her project. This isn\u2019t animosity; it\u2019s collaboration.\u201d\n\nLee's gaze sharpened, realization dawning. \u201cSo these were taken out of context?\u201d\n\n\u201cExactly,\u201d Mara murmured, a wave of relief washing over her. The fragile web of suspicion around Mark began to fray, leaving her with more questions than answers. She could feel the tension shift like a tightening noose, the truth just beyond her reach, waiting to be uncovered in the shadows of half-truths and deceit.",
+    "tension_level": 0.7370258146109966,
+    "clues_revealed": [],
+    "red_herrings_encountered": [
+      "rh2"
+    ],
+    "red_herrings_debunked": [
+      "rh2"
+    ]
+  },
+  {
+    "number": 13,
+    "event_type": "clue_discovery",
+    "subtype": "digital_trace",
+    "title": "Access Logs Uncovered",
+    "narrative": "Detective Mara Chen stood in the quiet lab, the sterile scent of antiseptic clinging to her like a shroud as she flicked through the access logs on her tablet. The screen glowed in the dim light, each line revealing a trail of movements that could crack the case wide open. She frowned, the fluorescent buzzing above her head a constant reminder of the tension that hung in the air. \n\n\"Lee, come take a look at this,\" she called out, her finger tapping urgently against the screen. \n\nOfficer Lee approached, squinting at the display. \"What do you have?\" \n\nMara scrolled through the records, her heart quickening with each entry. \"Here. Michael had access to the neurotoxin used to poison Emily. He entered the storage room twice last week.\"\n\nLee's expression shifted from curiosity to concern. \"Twice? That's a lot for just inventory checks.\"\n\nMara nodded, her mind racing. \"Exactly. He knew the exact location of the toxin. It\u2019s not just a coincidence. If he had motive, he definitely had the means.\"\n\n\"But can we prove he used it?\" Lee asked, crossing his arms. \n\n\"That\u2019s the next step,\" she replied, her voice steady, but her insides churned with unease. \n\nWith her mind racing through the implications, she focused on the logs before her, calculating. They had just uncovered a significant lead\u2014enough to tighten the noose around Michael's neck, if only they could connect the dots. The shadows of suspicion deepened, and Mara felt the weight of the truth slipping closer, just within her grasp, as the eerie hum of the lab surrounded them.",
+    "tension_level": 0.7807935806707117,
+    "clues_revealed": [
+      5
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 14,
+    "event_type": "breakthrough",
+    "subtype": "alibi_cracked",
+    "title": "Fractured Alibi Unraveled",
+    "narrative": "Detective Mara Chen paced the narrow hallway leading to the lab, her mind racing with the pieces of the puzzle that had begun to align ominously. She stopped abruptly, her heart skipping as she recalled the timestamps from Michael's alibi, which had been confirmed by several colleagues who claimed he was in a meeting at the time of Emily\u2019s murder. But now, with the access logs in hand, the weight of doubt began to anchor itself firmly in her gut.\n\nJust as she reached the lab door, her phone buzzed violently in her pocket. She pulled it out to see an urgent message from Officer Lee: 'Check the meeting participants. Something\u2019s off.' \n\nMara\u2019s pulse quickened. She rushed back to her desk, the harsh fluorescent lights flickering overhead like warning signals. She logged into the meeting software and pulled up the participant list. Michael's name was there, but the timestamps didn\u2019t match.\n\n\u201cLee!\u201d she shouted, her voice echoing through the lab. \u201cGet in here!\u201d \n\nLee rushed in, breathless. \u201cWhat\u2019s going on?\u201d \n\n\u201cMichael was marked present, but the meeting lasted longer than he claims he was there, not to mention three of the participants didn\u2019t even join until fifteen minutes after he left.\u201d \n\nLee\u2019s eyes widened. \u201cSo he could\u2019ve slipped out?\u201d \n\n\u201cExactly. He had the time and the opportunity to poison Emily without anyone knowing.\u201d Mara\u2019s mind raced, the implications crashing over her like a tidal wave. \u201cHe\u2019s been lying. And he knew he was in the clear until now.\u201d  \n\nThe air in the lab shifted, a tangible tension enveloping her as the shadow of suspicion fell squarely on Michael\u2019s shoulders. Just one more piece of evidence could seal his fate, and Mara was determined to find it. The truth was close, so tantalizingly within reach, and the walls between her and the murderer were crumbling beneath the weight of betrayal and ambition.",
+    "tension_level": 0.8096606777630482,
+    "clues_revealed": [],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 15,
+    "event_type": "breakthrough",
+    "subtype": "forensic_match",
+    "title": "Toxic Evidence Uncovered",
+    "narrative": "Detective Mara Chen stood poised at the edge of the forensic lab, the sterile aroma of alcohol and bleach stinging her nostrils. A gleaming surface of polished glass separated her from the forensic technician, who was meticulously examining a set of vials under a brilliant white light. The quiet drumming of her heart echoed in the stillness as she shifted from foot to foot, anticipation bubbling beneath her calm exterior.\n\n\"I need those results, Sam,\" Mara urged, her voice cutting through the silence. \"Is the neurotoxin we found in Emily's system a match for anything in the lab?\"\n\nSam looked up, his face a mask of concentration, and nodded slowly. \"We\u2019ve been running tests on the samples you gathered. Just got the confirmation. The neurotoxin in Emily\u2019s bloodstream was sourced from the same stock as the one logged in the lab\u2019s inventory.\"\n\nMara\u2019s breath hitched, the implications swirling around her like a whirlwind. \"That means the killer had access. It has to be Michael.\"\n\n\"Not just that,\" Sam continued, scrolling through the data on his tablet. \"It also matches the vials found in the storage room. The logs show Michael accessed it last week.\"\n\n\u201cThis reinforces our timeline,\u201d she whispered, her mind racing as the pieces began locking into place. She turned sharply, her eyes narrowing with resolve. \u201cThis isn\u2019t just coincidence. We need to confront him now.\u201d \n\nJust as she made her move, her phone buzzed again, but she barely noticed. The truth was barreling towards her, a freight train she could no longer ignore, each revelation tightening the noose around Michael's neck. The air felt electric with the thrill of discovery, and Mara was prepared to drive the final nail into his coffin.",
+    "tension_level": 0.872172675901338,
+    "clues_revealed": [
+      "neurotoxin_matching_source"
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  },
+  {
+    "number": 16,
+    "event_type": "resolution",
+    "subtype": "final_confrontation",
+    "title": "Confrontation in the Lab",
+    "narrative": "Detective Mara Chen strode purposefully into the lab, her heart hammering like a war drum. The fluorescent lights buzzed overhead, casting a stark glare on the sterile surfaces of the workspace. There, at the central table, Dr. Michael Reynolds sat with a calm demeanor that sent chills down her spine. He glanced up, his eyes betraying nothing, but Mara knew better; the pieces were finally snapping together.\n\n\"Michael,\" she said, her voice steady, cutting through the tension like a knife. \"We need to talk about Emily.\"\n\nHis expression barely flickered, but she noted the slight tightening of his jaw. \"I\u2019ve already told you everything I know, Mara. I was in the meeting, remember?\"\n\nShe stepped closer, narrowing the distance between them. \"You were indeed in the meeting, but you slipped out long enough to poison her coffee. The neurotoxin found in her system was sourced from the same vials you accessed. Your obsession with her led to rage when she chose another colleague for the grant. Was it worth it, Michael?\"\n\nIn an instant, the calm facade cracked. \"You don\u2019t understand! Emily was everything to me! She was going to leave him for me!\" His voice crescendoed, echoing in the sterile silence. \"But she didn\u2019t, and I\u2014I couldn\u2019t lose her like that!\"\n\nMara's breath caught in her throat. \"So you decided to eliminate her? Poison her coffee like a coward? You thought you could control fate?\"\n\nHe leapt to his feet, fury igniting in his eyes. \"You don\u2019t know what it was like! I was humiliated, she made a fool of me! I had to do something!\"\n\n\"And now you\u2019ll pay the price for it.\" As she reached for her radio, the air thickened with the weight of his defeat. She had him cornered, the truth landing like a heavy stone. The lab, once a place of discovery, had transformed into a chamber of secrets, and with Michael\u2019s confession teetering on the edge, Mara felt the tension of the moment snap like a taut wire, sealing his fate as the walls closed in around him.",
+    "tension_level": 0.622172675901338,
+    "clues_revealed": [
+      "1",
+      "2",
+      "3"
+    ],
+    "red_herrings_encountered": [],
+    "red_herrings_debunked": []
+  }
+]

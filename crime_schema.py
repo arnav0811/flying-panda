@@ -1,9 +1,20 @@
+"""
+Stage 1: Crime Schema Generator 
+
+Takes a setting string as input and produces a CrimeSchema containing:
+- Victim and criminal identity (ground truth)
+- 4 suspects with means/motive/opportunity scores and alibis
+- A chain of clues
+
+The output CrimeSchema flows into the Red Herring Injector (Stage 2) and is referenced by all later stages.
+"""
+
 from models import CrimeSchema, Suspect, Clue
 from llm import call_llm_json
 
-SYSTEM_PROMPT = """You are a crime fiction architect. You design intricate murder mysteries
+SYSTEM_PROMPT = """You are a crime fiction architect. You design murder mysteries
 with carefully constructed clue chains, complex suspect webs, and layered motives.
-You always respond in valid JSON."""
+You always respond in a valid JSON."""
 
 def generate_crime_schema(setting, num_suspects=4):
     user_prompt = f"""Create a murder mystery set in: {setting}

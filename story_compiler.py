@@ -1,3 +1,16 @@
+"""
+Stage 5: Story Compiler 
+
+Takes the full list of PlotPoints from Stage 4 and compiles them into
+a single narrative. Adds transitions between scenes, ensures
+character consistency, and produces the final readable story.
+
+Also generates the "crime story" (Part I) -- the backstory= of how the crime was committed.
+
+Inputs: CrimeSchema + list of all PlotPoints
+Output: compiled story text (string)
+"""
+
 from models import CrimeSchema, PlotPoint
 from llm import call_llm
 

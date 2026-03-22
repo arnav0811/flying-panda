@@ -1,3 +1,14 @@
+"""
+Stage 2: Red Herring Injector
+
+Takes a CrimeSchema from Stage 1 and adds 3. The criminal's identity is
+stripped before prompting so the LLM can't bias the herrings.
+
+Output: the same CrimeSchem now with red_herrings populated.
+This is used by the Meta-Controller (Stage 3) and
+Plot Point Generator (Stage 4).
+"""
+
 import json
 from models import CrimeSchema, RedHerring
 from llm import call_llm_json

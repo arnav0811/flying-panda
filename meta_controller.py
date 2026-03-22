@@ -1,3 +1,22 @@
+"""
+Stage 3: Suspense Meta-Controller
+
+It is a state machine thatcontrols the pacing of the investigation by deciding what type of plot point
+should happen next.
+Inputs: CrimeSchema 
+Outputs: PlotPointSpec objects that tell the Plot Point Generator (Stage 4)
+         what kind of scene to write.
+
+Key responsibilities:
+- Maintains a target tension curve 
+- Tracks which clues have been revealed, which red herrings encountered/debunked
+- Picks event types (clue_discovery, obstacle, red_herring_encounter, etc.)
+  based on tension change, progress, and variety constraints
+- Guarantees a breakthrough + resolution at the end of the story
+- Updates internal state after each plot point is generated (feedback loop,
+  shown as yellow arrow in architecture diagram)
+"""
+
 import random
 import math
 from models import CrimeSchema, PlotPointSpec, PlotPoint
@@ -129,9 +148,13 @@ class SuspenseController:
         delta = target - self.current_tension
         tolerance = 0.1
 
-        # Final plot points -> resolution
-        if point_progress >= 0.9 and progress >= 0.8:
+        # Last plot point is ALWAYS resolution
+        if self.plot_points_generated == self.num_plot_points - 1:
             return "resolution"
+
+        # Second to last -> breakthrough to set up the resolution
+        if self.plot_points_generated == self.num_plot_points - 2:
+            return "breakthrough"
 
         # Near end, most clues found -> breakthrough
         if point_progress >= 0.75 and progress >= 0.7:
@@ -170,10 +193,13 @@ class SuspenseController:
             if t in weights:
                 weights[t] *= 0.3
 
-        # Must reveal clues periodically so we actually solve the crime
+        # Must reveal clues so we actually solve the crime
         unrevealed = len(self.schema.evidence_chain) - len(self.revealed_clues)
         remaining_points = self.num_plot_points - self.plot_points_generated
         if unrevealed > 0 and remaining_points > 0:
+            # Force clue discovery if we're running out of time
+            if unrevealed >= remaining_points - 2:
+                return "clue_discovery"
             if unrevealed >= remaining_points * 0.5:
                 weights["clue_discovery"] = max(weights.get("clue_discovery", 0), 4.0)
 
@@ -228,6 +254,7 @@ class SuspenseController:
                         break
             if next_clue:
                 details["clue"] = next_clue.to_dict()
+                details["auto_reveal_clue"] = next_clue.id  # controller tracks this
                 details["instruction"] = (
                     f"The detective discovers: {next_clue.description}. "
                     f"Method: {next_clue.discovery_method}. "
@@ -324,11 +351,18 @@ class SuspenseController:
 
         return spec
 
-    def update_state(self, plot_point: PlotPoint):
+    def update_state(self, plot_point: PlotPoint, spec: PlotPointSpec = None):
         """Update controller state after a plot point is generated."""
-        # Track revealed clues
+        # Track revealed clues from LLM response
         for clue_id in plot_point.clues_revealed:
             self.revealed_clues.add(clue_id)
+
+        # Also auto-reveal clue if the controller assigned one
+        if spec and "auto_reveal_clue" in spec.details:
+            cid = spec.details["auto_reveal_clue"]
+            self.revealed_clues.add(cid)
+            if cid not in plot_point.clues_revealed:
+                plot_point.clues_revealed.append(cid)
 
         # Track red herring state
         for rh_id in plot_point.red_herrings_encountered:
@@ -337,9 +371,16 @@ class SuspenseController:
             self.debunked_herrings.add(rh_id)
 
         # Update tension
-        base_effect = self.TENSION_EFFECTS.get(plot_point.event_type, 0.05)
-        noise = random.uniform(-0.03, 0.03)
-        self.current_tension = max(0.0, min(1.0, self.current_tension + base_effect + noise))
+        if plot_point.event_type == "resolution":
+            # Resolution brings tension down for a satisfying close
+            self.current_tension = max(0.0, self.current_tension - 0.25)
+        else:
+            base_effect = self.TENSION_EFFECTS.get(plot_point.event_type, 0.05)
+            noise = random.uniform(-0.03, 0.03)
+            # Dampen gains as tension gets high so we don't pin at 1.0
+            if self.current_tension > 0.7:
+                base_effect *= (1.0 - self.current_tension) * 2
+            self.current_tension = max(0.0, min(0.98, self.current_tension + base_effect + noise))
         plot_point.tension_level = self.current_tension
         self.tension_history.append(self.current_tension)
 
@@ -350,15 +391,12 @@ class SuspenseController:
         self.plot_points_generated += 1
 
     def is_done(self):
-        """Terminate when all clues revealed AND tension > threshold AND minimum points met."""
-        all_clues = len(self.revealed_clues) >= len(self.schema.evidence_chain)
-        tension_ok = self.current_tension >= 0.6
-        min_points = self.plot_points_generated >= self.min_plot_points
+        """Only done after resolution has been generated."""
+        has_resolution = "resolution" in self.recent_types
         max_points = self.plot_points_generated >= self.num_plot_points
 
-        # Must have minimum points; stop early if all clues found + high tension
-        if max_points:
+        if has_resolution:
             return True
-        if all_clues and tension_ok and min_points:
+        if max_points:
             return True
         return False
