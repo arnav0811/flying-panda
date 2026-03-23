@@ -142,11 +142,3 @@ This story has 16 plot points covering all event categories:
 ![Exemplar Tension Curve](examples/exemplar_tension_curve.png)
 
 The tension curve shows the 3-act structure: gradual build (0.12-0.34), rising action with dips for false leads (0.46-0.78), peak at breakthrough (0.87), and resolution drop (0.62).
-
-**Why this is a good run:**
-
-- All 6 clues are revealed across the investigation
-- 3 red herrings are introduced and 2 are debunked during the story
-- The criminal confesses in the final scene
-- Good events: obstacles, confrontations, red herrings, false leads, breakthroughs, and a final resolution
-- A suspect fleeing (Plot Point 5) adds dramatic tension beyond the standard investigation
