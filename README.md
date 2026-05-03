@@ -1,16 +1,14 @@
 # Flying Panda
 
-Team: Flying Panda (Arnav Mardia, Shivom Dhamija)
-System: Flying Panda
-Phase I template: Template 1 (Suspense Murder Mystery)
-Phase II template: Template 3 (Game Engine Rule Generation)
+Team: Flying Panda (Arnav Mardia, Shivom Dhamija)  
+Phase II template: Template 3 (Game Engine Rule Generation)  
 Course: CS 7634
 
 ## What it does
 
 Phase I generates a murder mystery story from a setting prompt. It produces 16 plot points, 4 suspects, a chain of 6 clues, and 3 red herrings. Pacing is controlled by a non-LLM state machine that tracks tension across a target curve.
 
-Phase II takes the generated mystery and turns it into a playable text adventure. The player can type any action. If the engine doesn't have rules for it, it makes them up on the fly, including any new objects, locations, or prerequisites needed to keep the action commonsense-consistent. When new state variables show up, existing rules get updated retroactively to handle them.
+Phase II takes the generated mystery and turns it into a playable game. The player can type any action. If the engine doesn't have rules for it, it makes them up on the fly, including any new objects, locations, or prerequisites needed to keep the action consistent. When new state variables show up, existing rules get updated retroactively to handle them.
 
 Both phases use gpt-4o-mini.
 
@@ -22,17 +20,19 @@ Phase I is 5 stages:
 2. `red_herrings.py` — Red Herring Injector (LLM). Generates misleading evidence pointing at innocent suspects. Criminal's identity is stripped before the prompt.
 3. `meta_controller.py` — Suspense Meta-Controller. State machine, no LLM. Picks the next plot point type based on a target tension curve and progress so far.
 4. `plot_generator.py` — Plot Point Generator (LLM). Writes each scene.
-5. `story_compiler.py` — Story Compiler (LLM). Stitches the plot points into one cohesive story.
+5. `story_compiler.py` — Story Compiler (LLM). Stitches the plot points into one complete story.
 
 Phase II lives in `phase2/`. Each module is one box from the architecture diagram in our proposal video:
 
-| File | Box | Role |
-| ---- | --- | ---- |
-| `phase2/world_generator.py` | green | Reads Phase I output, builds room graph, places objects/NPCs/clues, defines base actions. |
-| `phase2/game_engine.py` | yellow | The main loop. Prints scenes, reads input, orchestrates the other components, mutates world state, writes the transcript. |
-| `phase2/action_interpreter.py` | purple | Classifies free-text input as known / novel / impossible. |
-| `phase2/rule_generator.py` | gray | When an action is novel, this creates the rule and any cascading objects/rooms/state vars, plus retroactive updates to old rules. |
-| `phase2/story_guard.py` | orange | Checks every action against unresolved plot points. Decides constituent / consistent / exception, and picks an intervention if needed. |
+
+| File                           | Box In Diagram | Role                                                                                                                      |
+| ------------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| `phase2/world_generator.py`    | green          | Reads Phase I output, builds room graph, places objects/NPCs/clues                                                        |
+| `phase2/game_engine.py`        | yellow         | The main loop. Prints scenes, reads input, orchestrates the other components, mutates world state, writes the transcript. |
+| `phase2/action_interpreter.py` | purple         | Classifies user input as known / novel / impossible.                                                                      |
+| `phase2/rule_generator.py`     | gray           | When an action is new, this creates the rule and any objects/rooms/state vars and retroactive updates to old rules.       |
+| `phase2/story_guard.py`        | orange         | Checks every action against unresolved plot points                                                                        |
+
 
 Supporting:
 
@@ -44,13 +44,12 @@ Supporting:
 You need:
 
 - Python 3.10+
-- uv (https://docs.astral.sh/uv/)
+- uv ([https://docs.astral.sh/uv/](https://docs.astral.sh/uv/))
 - An OpenAI API key
 
 Setup:
 
 ```bash
-git clone <repo-url>
 cd flying-panda
 uv sync
 cp .env.example .env
@@ -87,22 +86,26 @@ To win: find at least 4 of 6 clues, then type `accuse <suspect name>`. Type `hel
 
 Phase I writes to `output/`:
 
-| File | What it has |
-| ---- | ----------- |
-| `mystery_TIMESTAMP.txt` | Crime backstory, plot point summary, full compiled story |
-| `crime_schema_TIMESTAMP.json` | Ground-truth crime data |
-| `plot_points_TIMESTAMP.json` | Per-plot-point structured data |
-| `tension_curve_TIMESTAMP.png` | Target vs. actual tension curve |
+
+| File                          | What it has                                              |
+| ----------------------------- | -------------------------------------------------------- |
+| `mystery_TIMESTAMP.txt`       | Crime backstory, plot point summary, full compiled story |
+| `crime_schema_TIMESTAMP.json` | Ground-truth crime data                                  |
+| `plot_points_TIMESTAMP.json`  | Per-plot-point structured data                           |
+| `tension_curve_TIMESTAMP.png` | Target vs. actual tension curve                          |
+
 
 Phase II writes to `output/phase2/`:
 
-| File | What it has |
-| ---- | ----------- |
-| `world_initial_TIMESTAMP.json` | World after generation, before play |
-| `world_final_TIMESTAMP.json` | World at the end of the session |
-| `transcript_TIMESTAMP.txt` | Plain text of what the player saw |
-| `transcript_TIMESTAMP.json` | Per-turn structured event log |
-| `walkthrough_TIMESTAMP.txt` | Labeled walkthrough with `[USER]` / `[ACTION INTERPRETER]` / `[RULE GENERATOR]` / `[STORY GUARD]` markers |
+
+| File                           | What it has                                                                                               |
+| ------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| `world_initial_TIMESTAMP.json` | World after generation, before play                                                                       |
+| `world_final_TIMESTAMP.json`   | World at the end of the session                                                                           |
+| `transcript_TIMESTAMP.txt`     | Plain text of what the player saw                                                                         |
+| `transcript_TIMESTAMP.json`    | Per-turn structured event log                                                                             |
+| `walkthrough_TIMESTAMP.txt`    | Labeled walkthrough with `[USER]` / `[ACTION INTERPRETER]` / `[RULE GENERATOR]` / `[STORY GUARD]` markers |
+
 
 ## Runtime and cost
 
@@ -158,6 +161,7 @@ uv run python play.py --exemplar
 
 It has 16 plot points, all event categories represented, and the criminal confesses in the final scene.
 
+
 | #   | Type                  | Title                              | Tension |
 | --- | --------------------- | ---------------------------------- | ------- |
 | 1   | obstacle              | Lab of Shadows                     | 0.12    |
@@ -177,16 +181,19 @@ It has 16 plot points, all event categories represented, and the criminal confes
 | 15  | breakthrough          | Toxic Evidence Uncovered           | 0.87    |
 | 16  | resolution            | Confrontation in the Lab           | 0.62    |
 
+
 Tension curve in `examples/exemplar_tension_curve.png`. The curve shows the 3-act structure: gradual build (0.12-0.34), rising action with dips for false leads (0.46-0.78), peak at breakthrough (0.87), and resolution drop (0.62).
 
 ## Phase II walkthroughs
 
 Two walkthroughs are bundled in `examples/`:
 
-| File | Outcome | What it shows |
-| ---- | ------- | ------------- |
-| `examples/phase2_exemplar_walkthrough.txt` | CASE CLOSED, 30 turns, 6/6 clues | A winning playthrough that hits constituent + consistent + novel rule generation + correct accusation. |
-| `examples/phase2_misspun_walkthrough.txt` | CASE COLD, 21 turns, 5 clues | A defensive playthrough. The player tries to skip ahead, fly to the moon, burn evidence, kill the criminal. The system handles it. Includes a clean retroactive rule update. Player ends up making a wrong accusation. |
+
+| File                                       | Outcome                          | What it shows                                                                                                                                                                                                          |
+| ------------------------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `examples/phase2_exemplar_walkthrough.txt` | CASE CLOSED, 30 turns, 6/6 clues | A winning playthrough that hits constituent + consistent + novel rule generation + correct accusation.                                                                                                                 |
+| `examples/phase2_misspun_walkthrough.txt`  | CASE COLD, 21 turns, 5 clues     | A defensive playthrough. The player tries to skip ahead, fly to the moon, burn evidence, kill the criminal. The system handles it. Includes a clean retroactive rule update. Player ends up making a wrong accusation. |
+
 
 Each line in those files is tagged so you can see which component made each decision:
 
@@ -199,8 +206,6 @@ Each line in those files is tagged so you can see which component made each deci
 
 ## Template-specific question
 
-> How does your system know when the story is advancing differently than expected? How does it know when an action will break the story, and how does it handle that?
-
 The Story Guard runs after the Action Interpreter on every turn. It reads the parsed action, the current world state, and the unresolved Phase I plot points, then picks one of three classifications:
 
 **constituent** — the action advances a plot point. This includes alternate paths. If the player picks the lock on a desk and finds a copy of a document a clue would have provided, the Story Guard checks whether the discovery effectively reveals an unresolved clue and, if so, credits it.
@@ -209,7 +214,7 @@ The Story Guard runs after the Action Interpreter on every turn. It reads the pa
 
 **exception** — the action would make an unresolved plot point impossible. The Story Guard picks one of three intervention strategies:
 
-- **block** — refuse with an in-world reason. Used when the threat is direct (burning a clue, killing the criminal). e.g. *"As you reach for the lighter, the lab's fire suppression system kicks on and the report is whisked away to the safety locker."*
+- **block** — refuse with an in-world reason. Used when the threat is direct (burning a clue, killing the criminal)
 - **redirect** — the action partially succeeds but is steered away from the threat.
 - **adapt** — the action succeeds AND a new path to the same information is opened (a digital backup, a duplicate copy, a backup witness).
 
@@ -232,7 +237,7 @@ with a dark liquid. It sits in the coffee station, slightly chipped.
                           lab's coffee station
 ```
 
-### Novel action with cascade (Rule Generator JIT-creates a rule + new object)
+### Novel action 
 
 ```
 --- Turn 9 (exemplar) ---
@@ -247,7 +252,7 @@ with a dark liquid. It sits in the coffee station, slightly chipped.
   Ready to execute: True
 ```
 
-### Novel action with cascading prerequisites (cannot fire yet)
+### Novel action with prerequisites
 
 ```
 --- Turn 14 (exemplar) ---
@@ -261,7 +266,7 @@ with a dark liquid. It sits in the coffee station, slightly chipped.
   Ready to execute: False
 ```
 
-The rule got created but the action did not fire. The player would need to find a fire source first, and the Story Guard would still block it on execution because the toxicology report has `is_critical_evidence=true`.
+The rule got created but the action did not fire. The player would need to find a fire source first, and the Story Guard would still block it on execution because the toxicology report has `is_critical_evidence = true`.
 
 ### Retroactive rule update
 
@@ -331,7 +336,8 @@ this," they whisper. The case is closed.
 
 A few things worth knowing about the system:
 
-- The same input can produce slightly different cascades on different runs. The Action Interpreter and Rule Generator are LLM calls and they are not deterministic. The structure (constituent / consistent / exception, ready_to_execute true/false) is reliable, but the specific narration and which prerequisites the Rule Generator picks will vary.
+- The same input can produce slightly different cascades on different runs. The Action Interpreter and Rule Generator are LLM calls and they are not deterministic. 
 - The cascade depth is capped at 3 to keep things from spiralling. New objects are capped at 5 and new rooms at 3 per cascade.
 - The `--world` flag loads a saved world snapshot, which is what the bundled walkthroughs use. This skips world generation (Component 1) so the four runtime LLM components are still live but the room graph is fixed. This is what made the scripted demos reproducible.
-- Phase I has its own quirks. Tension can pin at 1.0 if the meta-controller can't bring it down (we dampen above 0.7). Without the breakthrough+resolution slot reservation in the meta-controller, runs sometimes ended without an accusation. Both are documented in the meta-controller code.
+- Tension can pin at 1.0 if the meta-controller can't bring it down (we dampen above 0.7)
+
