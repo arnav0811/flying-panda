@@ -1,0 +1,669 @@
+{
+  "rooms": {
+    "entrance_lobby": {
+      "id": "entrance_lobby",
+      "name": "Entrance Lobby",
+      "description": "The entrance lobby of the university research lab is bright and welcoming, with sleek modern decor. A bulletin board displays various research announcements, and a faint buzz of conversation can be heard in the distance.",
+      "connections": {
+        "north": "hallway",
+        "east": "break_room"
+      },
+      "object_ids": [],
+      "npc_ids": [],
+      "state": {
+        "is_lit": true,
+        "is_locked": false
+      },
+      "visited": true
+    },
+    "hallway": {
+      "id": "hallway",
+      "name": "Hallway",
+      "description": "The hallway is long and narrow, lined with doors to various labs and offices. Fluorescent lights hum overhead, casting a sterile glow on the beige walls. The air feels charged with academic tension.",
+      "connections": {
+        "south": "entrance_lobby",
+        "north": "lab_of_shadows",
+        "east": "security_office"
+      },
+      "object_ids": [],
+      "npc_ids": [],
+      "state": {
+        "is_lit": true,
+        "is_locked": false
+      },
+      "visited": false
+    },
+    "lab_of_shadows": {
+      "id": "lab_of_shadows",
+      "name": "Lab of Shadows",
+      "description": "In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls as fluorescent lights flicker ominously. This once-bustling research environment now feels eerie and abandoned, as if secrets linger in the air.",
+      "connections": {
+        "south": "hallway",
+        "west": "evidence_room"
+      },
+      "object_ids": [
+        "coffee_mug_emily",
+        "methodology_notes_jennifer",
+        "coffee_station",
+        "lab_equipment"
+      ],
+      "npc_ids": [
+        "mitchell"
+      ],
+      "state": {
+        "is_lit": false,
+        "is_locked": false
+      },
+      "visited": false
+    },
+    "break_room": {
+      "id": "break_room",
+      "name": "Break Room",
+      "description": "The break room is a cozy enclave within the lab, filled with the aroma of coffee and the sound of a microwave humming. A small table sits in the corner, surrounded by chairs, offering a place for researchers to unwind.",
+      "connections": {
+        "west": "entrance_lobby",
+        "north": "evidence_room"
+      },
+      "object_ids": [
+        "witness_statement_jennifer",
+        "email_screenshots_mark",
+        "break_room_table"
+      ],
+      "npc_ids": [
+        "thompson",
+        "lee"
+      ],
+      "state": {
+        "is_lit": true,
+        "is_locked": false
+      },
+      "visited": false
+    },
+    "security_office": {
+      "id": "security_office",
+      "name": "Security Office",
+      "description": "The dimly lit security office is filled with monitors displaying various feeds from around the labs. The soft glow of the screens highlights the cluttered desk, where evidence from the investigation lies scattered.",
+      "connections": {
+        "west": "hallway",
+        "north": "evidence_room"
+      },
+      "object_ids": [
+        "security_camera_footage",
+        "lab_records_michael",
+        "desk_security_office"
+      ],
+      "npc_ids": [
+        "reynolds"
+      ],
+      "state": {
+        "is_lit": true,
+        "is_locked": false
+      },
+      "visited": false
+    },
+    "evidence_room": {
+      "id": "evidence_room",
+      "name": "Evidence Room",
+      "description": "The evidence room is a stark, sterile space where crucial clues are stored. Papers and vials are neatly organized on shelves, but a sense of foreboding hangs in the air, hinting at the secrets they contain.",
+      "connections": {
+        "south": "lab_of_shadows",
+        "east": "break_room",
+        "southwest": "security_office"
+      },
+      "object_ids": [
+        "toxicology_report",
+        "access_log_michael",
+        "forensic_report_neurotoxin"
+      ],
+      "npc_ids": [],
+      "state": {
+        "is_lit": true,
+        "is_locked": false
+      },
+      "visited": false
+    }
+  },
+  "objects": {
+    "coffee_mug_emily": {
+      "id": "coffee_mug_emily",
+      "name": "Coffee Mug",
+      "description": "A ceramic mug with a faded inscription of 'Emily' on the side, stained with a dark liquid. It sits in the coffee station, slightly chipped.",
+      "location": "lab_of_shadows",
+      "state": {
+        "weight": "light",
+        "is_destructible": true,
+        "is_locked": false
+      },
+      "aliases": [
+        "mug"
+      ],
+      "is_clue": true,
+      "clue_id": 1,
+      "is_critical_evidence": true,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "security_camera_footage": {
+      "id": "security_camera_footage",
+      "name": "Security Camera Footage",
+      "description": "A dusty old tape labeled 'Lab Security - March 5th'. It appears to have been recently reviewed, with a few frame cuts visible.",
+      "location": "security_office",
+      "state": {
+        "weight": "medium",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "tape",
+        "footage"
+      ],
+      "is_clue": true,
+      "clue_id": 2,
+      "is_critical_evidence": true,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "toxicology_report": {
+      "id": "toxicology_report",
+      "name": "Toxicology Report",
+      "description": "A folded report with the title 'Toxicology Analysis Results'. The text is densely packed with medical jargon, but some words stand out ominously.",
+      "location": "evidence_room",
+      "state": {
+        "weight": "light",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "report"
+      ],
+      "is_clue": true,
+      "clue_id": 3,
+      "is_critical_evidence": true,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "witness_statement_jennifer": {
+      "id": "witness_statement_jennifer",
+      "name": "Witness Statement",
+      "description": "A typed document detailing an account of an argument overheard in the lab. The words 'argument' and 'Michael' jump out at you.",
+      "location": "break_room",
+      "state": {
+        "weight": "light",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "statement",
+        "testimony"
+      ],
+      "is_clue": true,
+      "clue_id": 4,
+      "is_critical_evidence": true,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "lab_records_michael": {
+      "id": "lab_records_michael",
+      "name": "Lab Access Records",
+      "description": "A printed log showing entries and exits from the lab. Michael's access to restricted areas is highlighted, with an unsettling timestamp.",
+      "location": "security_office",
+      "state": {
+        "weight": "medium",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "records",
+        "logs"
+      ],
+      "is_clue": true,
+      "clue_id": 5,
+      "is_critical_evidence": true,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "access_log_michael": {
+      "id": "access_log_michael",
+      "name": "Late-night Access Log",
+      "description": "A digital log file that shows Michael's late-night entry into the lab. The timestamp contradicts his alibi, raising suspicion.",
+      "location": "evidence_room",
+      "state": {
+        "weight": "light",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "log",
+        "entry"
+      ],
+      "is_clue": true,
+      "clue_id": 6,
+      "is_critical_evidence": true,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "forensic_report_neurotoxin": {
+      "id": "forensic_report_neurotoxin",
+      "name": "Forensic Report",
+      "description": "A detailed forensic analysis that outlines traces found in the coffee cup. It seems to point in a different direction than expected.",
+      "location": "evidence_room",
+      "state": {
+        "weight": "light",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "forensic report",
+        "report"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": true,
+      "red_herring_id": "rh1"
+    },
+    "email_screenshots_mark": {
+      "id": "email_screenshots_mark",
+      "name": "Email Screenshots",
+      "description": "A collection of printed emails that hint at a disagreement. They seem to depict a contentious relationship between Mark and Emily.",
+      "location": "break_room",
+      "state": {
+        "weight": "light",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "emails",
+        "screenshots"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": true,
+      "red_herring_id": "rh2"
+    },
+    "methodology_notes_jennifer": {
+      "id": "methodology_notes_jennifer",
+      "name": "Methodology Notes",
+      "description": "A stack of notes detailing various research methodologies. They are scribbled with comments suggesting disagreements but lack context.",
+      "location": "lab_of_shadows",
+      "state": {
+        "weight": "light",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "notes",
+        "methodology"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": true,
+      "red_herring_id": "rh3"
+    },
+    "coffee_station": {
+      "id": "coffee_station",
+      "name": "Coffee Station",
+      "description": "A small area with a coffee maker and various supplies. It feels cozy, yet there's an unsettling vibe lingering in the air.",
+      "location": "lab_of_shadows",
+      "state": {
+        "weight": "medium",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "coffee maker",
+        "station"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "desk_security_office": {
+      "id": "desk_security_office",
+      "name": "Security Desk",
+      "description": "A cluttered desk with monitors displaying various feeds. It's the hub for all security activities in the building, but feels neglected.",
+      "location": "security_office",
+      "state": {
+        "weight": "heavy",
+        "is_destructible": true,
+        "is_locked": false
+      },
+      "aliases": [
+        "desk"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "break_room_table": {
+      "id": "break_room_table",
+      "name": "Break Room Table",
+      "description": "A round table surrounded by mismatched chairs. It has seen many conversations, some of which may have been tense.",
+      "location": "break_room",
+      "state": {
+        "weight": "medium",
+        "is_destructible": true,
+        "is_locked": false
+      },
+      "aliases": [
+        "table"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": false,
+      "red_herring_id": null
+    },
+    "lab_equipment": {
+      "id": "lab_equipment",
+      "name": "Lab Equipment",
+      "description": "Various pieces of scientific equipment are scattered around. They seem to have been used recently, with some still warm to the touch.",
+      "location": "lab_of_shadows",
+      "state": {
+        "weight": "heavy",
+        "is_destructible": false,
+        "is_locked": false
+      },
+      "aliases": [
+        "equipment"
+      ],
+      "is_clue": false,
+      "clue_id": null,
+      "is_critical_evidence": false,
+      "is_red_herring": false,
+      "red_herring_id": null
+    }
+  },
+  "npcs": {
+    "mitchell": {
+      "id": "mitchell",
+      "name": "Dr. Sarah Mitchell",
+      "description": "A tall woman with curly brown hair and glasses, currently examining some lab equipment with a furrowed brow.",
+      "location": "lab_of_shadows",
+      "state": {
+        "alive": true,
+        "willing_to_talk": true,
+        "intimidated": false,
+        "interrogated_count": 0
+      },
+      "is_suspect": true,
+      "suspect_data": {
+        "role": "Postdoctoral researcher",
+        "alibi": "She claims she was in the library studying during the murder.",
+        "motive": "Sarah had previously collaborated with Emily but was overlooked for a promotion that Emily received, creating a motive rooted in jealousy.",
+        "means": "Access to all lab materials and equipment needed for experiments, including poisons used in research.",
+        "alibi_is_false": true
+      },
+      "dialogue_topics": [
+        "the_victim",
+        "the_night_of",
+        "their_alibi",
+        "their_relationship_with_victim"
+      ],
+      "is_critical": false
+    },
+    "thompson": {
+      "id": "thompson",
+      "name": "Dr. Mark Thompson",
+      "description": "A young man with short blond hair and a nervous demeanor, currently sorting through a pile of lab reports at the desk.",
+      "location": "break_room",
+      "state": {
+        "alive": true,
+        "willing_to_talk": true,
+        "intimidated": false,
+        "interrogated_count": 0
+      },
+      "is_suspect": true,
+      "suspect_data": {
+        "role": "Lab technician",
+        "alibi": "He claims to have been taking inventory in the main office during the murder.",
+        "motive": "Mark had a secret crush on Emily and felt heartbroken after she rejected his advances.",
+        "means": "Frequent access to all lab areas and knowledge of chemical combinations.",
+        "alibi_is_false": false
+      },
+      "dialogue_topics": [
+        "the_victim",
+        "the_night_of",
+        "their_alibi",
+        "their_relationship_with_victim"
+      ],
+      "is_critical": false
+    },
+    "lee": {
+      "id": "lee",
+      "name": "Dr. Jennifer Lee",
+      "description": "An Asian woman with shoulder-length black hair, visibly tense, currently pacing around the room while glancing at her notes.",
+      "location": "break_room",
+      "state": {
+        "alive": true,
+        "willing_to_talk": true,
+        "intimidated": false,
+        "interrogated_count": 0
+      },
+      "is_suspect": true,
+      "suspect_data": {
+        "role": "Research assistant",
+        "alibi": "Claims to have been in the break room during the time of the murder.",
+        "motive": "She recently had a public argument with Emily regarding research integrity, which caused her to harbor resentment.",
+        "means": "Has access to the lab's coffee supplies and works with the same equipment as Emily.",
+        "alibi_is_false": true
+      },
+      "dialogue_topics": [
+        "the_victim",
+        "the_night_of",
+        "their_alibi",
+        "their_relationship_with_victim"
+      ],
+      "is_critical": false
+    },
+    "reynolds": {
+      "id": "reynolds",
+      "name": "Dr. Michael Reynolds",
+      "description": "A tall man with graying hair and a stern expression, currently sitting at a desk with his arms crossed, looking deep in thought.",
+      "location": "security_office",
+      "state": {
+        "alive": true,
+        "willing_to_talk": true,
+        "intimidated": false,
+        "interrogated_count": 0
+      },
+      "is_suspect": true,
+      "suspect_data": {
+        "role": "Lead researcher",
+        "alibi": "He states he was in a meeting, confirmed by several colleagues.",
+        "motive": "He killed Emily out of personal betrayal after she rejected him for a colleague, leading to feelings of inadequacy and rage.",
+        "means": "He has the highest level of access to the lab and control over the equipment.",
+        "alibi_is_false": true
+      },
+      "dialogue_topics": [
+        "the_victim",
+        "the_night_of",
+        "their_alibi",
+        "their_relationship_with_victim"
+      ],
+      "is_critical": true
+    }
+  },
+  "rules": {
+    "look": {
+      "name": "look",
+      "description": "Look around the current room. Lists objects, NPCs, and exits.",
+      "preconditions": [
+        "player is in a room"
+      ],
+      "effects": [
+        "display current room description"
+      ],
+      "requires_target": false,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "examine": {
+      "name": "examine",
+      "description": "Look closely at an object or NPC.",
+      "preconditions": [
+        "target is in the current room OR in inventory",
+        "target is visible (not hidden inside a closed container)"
+      ],
+      "effects": [
+        "display target description",
+        "if target is_clue and player has not yet discovered clue_id: discover the clue",
+        "if target is_red_herring: mark as encountered"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "pick_up": {
+      "name": "pick_up",
+      "description": "Pick up an object and put it in inventory.",
+      "preconditions": [
+        "target is in the current room",
+        "target is portable (state.weight in {light, medium})",
+        "target is not nailed down or affixed"
+      ],
+      "effects": [
+        "move target to inventory"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "drop": {
+      "name": "drop",
+      "description": "Drop an object from inventory into the current room.",
+      "preconditions": [
+        "target is in inventory"
+      ],
+      "effects": [
+        "move target to current room"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "move": {
+      "name": "move",
+      "description": "Move to an adjacent room. Direction is the target.",
+      "preconditions": [
+        "current room has a connection in the named direction",
+        "the connecting passage is not locked"
+      ],
+      "effects": [
+        "update player_location to the connected room"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "talk": {
+      "name": "talk",
+      "description": "Speak with an NPC about a topic from their dialogue_topics.",
+      "preconditions": [
+        "target NPC is in the current room",
+        "NPC.state.alive == true",
+        "NPC.state.willing_to_talk == true"
+      ],
+      "effects": [
+        "NPC responds with information about the topic",
+        "may reveal a clue if the topic and NPC's knowledge align",
+        "may debunk a red herring if the conversation does so"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "use": {
+      "name": "use",
+      "description": "Use an object, optionally on another object or NPC.",
+      "preconditions": [
+        "target is in inventory or in the current room"
+      ],
+      "effects": [
+        "effect depends on target \u2014 may reveal a clue or unlock something"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "give": {
+      "name": "give",
+      "description": "Give an object from inventory to an NPC.",
+      "preconditions": [
+        "target object is in inventory",
+        "target NPC is in the current room"
+      ],
+      "effects": [
+        "move object from inventory to npc:<id>"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "inventory": {
+      "name": "inventory",
+      "description": "List the objects you are carrying.",
+      "preconditions": [],
+      "effects": [
+        "display inventory"
+      ],
+      "requires_target": false,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "accuse": {
+      "name": "accuse",
+      "description": "Accuse an NPC of being the murderer. Ends the game.",
+      "preconditions": [
+        "discovered_clues count >= accusation_threshold",
+        "target NPC is a suspect"
+      ],
+      "effects": [
+        "if target is the criminal: outcome = won",
+        "if target is innocent: outcome = lost",
+        "set game_over = true"
+      ],
+      "requires_target": true,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    },
+    "help": {
+      "name": "help",
+      "description": "Show available base actions.",
+      "preconditions": [],
+      "effects": [
+        "print list of base verbs"
+      ],
+      "requires_target": false,
+      "valid_targets": [],
+      "is_base": true,
+      "generated_at_turn": null
+    }
+  },
+  "player_location": "entrance_lobby",
+  "inventory": [],
+  "discovered_clues": [],
+  "encountered_red_herrings": [],
+  "debunked_red_herrings": [],
+  "plot_points_completed": [],
+  "turn_count": 0,
+  "game_over": false,
+  "outcome": "in_progress",
+  "transcript": []
+}

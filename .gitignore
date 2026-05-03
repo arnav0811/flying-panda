@@ -5,3 +5,19 @@ output/
 .venv/
 .claude/
 .python-version
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Tool caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Python build artifacts
+*.egg-info/
+dist/
+build/

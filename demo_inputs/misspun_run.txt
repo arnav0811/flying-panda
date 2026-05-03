@@ -1,0 +1,55 @@
+# Mis-spun walkthrough script for the Phase 2 demo.
+#
+# Designed against examples/exemplar_world.json — the same saved world.
+# Run with:
+#   uv run python play.py --world examples/exemplar_world.json --scripted demo_inputs/misspun_run.txt
+#
+# This script demonstrates the system's defensive behavior: how the engine
+# handles a player who tries to skip ahead, destroy evidence, perform
+# nonsensical actions, and ultimately makes the WRONG accusation.
+
+# --- The player tries to skip straight to the answer ---
+# Story Guard should mark this as a skip_attempt (no evidence).
+accuse reynolds
+
+# --- The player tries an impossible action ---
+fly to the moon
+
+# --- Move into the lab and try to DESTROY a clue ---
+north
+north
+look
+burn the coffee mug
+
+# --- Try a different angle: smash the mug ---
+smash the coffee mug with a chair
+
+# --- Now examine it normally — Story Guard credits the clue ---
+examine the coffee mug
+
+# --- Move to evidence room ---
+west
+
+# --- Try to threaten Mitchell to confess ---
+# Move back south to lab_of_shadows
+south
+threaten mitchell into confessing
+
+# --- Try to outright kill the criminal — Story Guard MUST block this ---
+# Reynolds is in security_office: south to hallway, east to security_office
+south
+east
+kill reynolds
+
+# --- Get enough clues to legitimately reach 4-clue threshold ---
+# kill failed; we're in security_office. examine clues here, then move on.
+examine the security camera footage
+examine the lab access records
+# move to evidence room for two more clues
+north
+examine the toxicology report
+examine the access log
+
+# --- Now WRONGLY accuse Mitchell. CASE COLD. ---
+south
+accuse mitchell

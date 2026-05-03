@@ -1,0 +1,348 @@
+======================================================================
+  FLYING PANDA — Phase II Interactive Mystery
+  Setting: a university research lab
+  Victim:  Dr. Emily Carter
+  Goal:    Find 4+ clues, then accuse the killer.
+  Type 'help' for actions, 'quit' to leave.
+======================================================================
+== Entrance Lobby ==
+The entrance lobby of the university research lab is bright and welcoming,
+with sleek modern decor. A bulletin board displays various research
+announcements, and a faint buzz of conversation can be heard in the distance.
+Exits: north, east.
+
+> look
+[ACTION INTERPRETER] classifying: 'look'...
+[ACTION INTERPRETER] classification=known, action=look, target=None
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Entrance Lobby ==
+The entrance lobby of the university research lab is bright and welcoming,
+with sleek modern decor. A bulletin board displays various research
+announcements, and a faint buzz of conversation can be heard in the distance.
+Exits: north, east.
+
+> inventory
+[ACTION INTERPRETER] classifying: 'inventory'...
+[ACTION INTERPRETER] classification=known, action=inventory, target=None
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+You're not carrying anything.
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+> look
+[ACTION INTERPRETER] classifying: 'look'...
+[ACTION INTERPRETER] classification=known, action=look, target=None
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+> examine the coffee mug
+[ACTION INTERPRETER] classifying: 'examine the coffee mug'...
+[ACTION INTERPRETER] classification=known, action=examine, target=the coffee mug
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=1
+
+A ceramic mug with a faded inscription of 'Emily' on the side, stained with a dark liquid. It sits in the coffee station, slightly chipped.
+
+[CLUE DISCOVERED] Clue 1: A coffee mug with Emily's name on it found in the lab's coffee station
+
+> talk to mitchell
+[ACTION INTERPRETER] classifying: 'talk to mitchell'...
+[ACTION INTERPRETER] classification=known, action=talk, target=mitchell
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+"She claims she was in the library studying during the murder." Dr. Sarah Mitchell pauses. "Look, I had no reason to want them dead."
+
+> examine the methodology notes
+[ACTION INTERPRETER] classifying: 'examine the methodology notes'...
+[ACTION INTERPRETER] classification=known, action=examine, target=methodology_notes_jennifer
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+A stack of notes detailing various research methodologies. They are scribbled with comments suggesting disagreements but lack context.
+
+[RED HERRING ENCOUNTERED] A lab report with Jennifer's notes was found crumpled in Emily's wastebasket with annotations about Emily's experiments.
+
+> search the lab equipment thoroughly
+[ACTION INTERPRETER] classifying: 'search the lab equipment thoroughly'...
+[ACTION INTERPRETER] classification=novel, action=search_lab_equipment, target=lab equipment
+[RULE GENERATOR] action is novel — generating rule + cascade...
+[RULE GENERATOR] NEW OBJECT: Hidden Lab Key (hidden_lab_key) placed in lab_of_shadows
+[RULE GENERATOR] NEW RULE: 'search_lab_equipment' — Thoroughly search the lab equipment for hidden items or clues.
+
+As you begin to search the lab equipment thoroughly, you notice a faint glimmer beneath some papers. Digging deeper, you uncover a small, rusted key that might be significant. It seems to suggest there are more secrets hidden within the Lab of Shadows.
+[Subquest opened] You have discovered a hidden key that may unlock new areas of the facility. Investigate further to find out what it opens.
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+> west
+[ACTION INTERPRETER] classifying: 'west'...
+[ACTION INTERPRETER] classification=known, action=move, target=west
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+> look
+[ACTION INTERPRETER] classifying: 'look'...
+[ACTION INTERPRETER] classification=known, action=look, target=None
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+> examine the toxicology report
+[ACTION INTERPRETER] classifying: 'examine the toxicology report'...
+[ACTION INTERPRETER] classification=known, action=examine, target=toxicology report
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=3
+
+A folded report with the title 'Toxicology Analysis Results'. The text is densely packed with medical jargon, but some words stand out ominously.
+
+[CLUE DISCOVERED] Clue 3: A toxicology report confirming the presence of a rare neurotoxin in Emily's bloodstream
+
+> examine the access log
+[ACTION INTERPRETER] classifying: 'examine the access log'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Late-night Access Log
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=6
+
+A digital log file that shows Michael's late-night entry into the lab. The timestamp contradicts his alibi, raising suspicion.
+
+[CLUE DISCOVERED] Clue 6: A late-night access log showing Michael entered the lab at a time he claimed to be in a meeting
+
+> examine the forensic report
+[ACTION INTERPRETER] classifying: 'examine the forensic report'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Forensic Report
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+A detailed forensic analysis that outlines traces found in the coffee cup. It seems to point in a different direction than expected.
+
+[RED HERRING ENCOUNTERED] A coffee cup with Sarah's fingerprints was found near Emily's desk.
+
+> burn the toxicology report
+[ACTION INTERPRETER] classifying: 'burn the toxicology report'...
+[ACTION INTERPRETER] classification=novel, action=burn_toxicology_report, target=toxicology report
+[RULE GENERATOR] action is novel — generating rule + cascade...
+[RULE GENERATOR] NEW RULE: 'burn_toxicology_report' — Attempt to burn the toxicology report using a fire source.
+
+As you reach for the toxicology report, you realize that you need a fire source to burn it. The evidence room feels cold and sterile, and you scan your surroundings for anything that could start a flame.
+[Subquest opened] To burn the toxicology report, you must first find a fire source in the evidence room or your inventory. Look around for something that can ignite it.
+
+> southwest
+[ACTION INTERPRETER] classifying: 'southwest'...
+[ACTION INTERPRETER] classification=known, action=move, target=southwest
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Security Office ==
+The dimly lit security office is filled with monitors displaying various feeds
+from around the labs. The soft glow of the screens highlights the cluttered
+desk, where evidence from the investigation lies scattered.
+You see: Security Camera Footage, Lab Access Records, Security Desk.
+Present: Dr. Michael Reynolds.
+Exits: west, north.
+
+> examine the security camera footage
+[ACTION INTERPRETER] classifying: 'examine the security camera footage'...
+[ACTION INTERPRETER] classification=known, action=examine, target=security camera footage
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=2
+
+A dusty old tape labeled 'Lab Security - March 5th'. It appears to have been recently reviewed, with a few frame cuts visible.
+
+[CLUE DISCOVERED] Clue 2: A security camera footage showing Michael leaving the lab shortly after Emily was last seen
+
+> examine the lab access records
+[ACTION INTERPRETER] classifying: 'examine the lab access records'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Lab Access Records
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=5
+
+A printed log showing entries and exits from the lab. Michael's access to restricted areas is highlighted, with an unsettling timestamp.
+
+[CLUE DISCOVERED] Clue 5: Lab records showing Michael had access to the neurotoxin used for the poisoning
+
+> talk to reynolds
+[ACTION INTERPRETER] classifying: 'talk to reynolds'...
+[ACTION INTERPRETER] classification=known, action=talk, target=reynolds
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+"He states he was in a meeting, confirmed by several colleagues." Dr. Michael Reynolds pauses. "Look, I had no reason to want them dead."
+
+> pick the lock on the security desk
+[ACTION INTERPRETER] classifying: 'pick the lock on the security desk'...
+[ACTION INTERPRETER] classification=novel, action=pick_lock_security_desk, target=security desk
+[RULE GENERATOR] action is novel — generating rule + cascade...
+[RULE GENERATOR] NEW RULE: 'pick_lock_security_desk' — Attempt to pick the lock on the security desk.
+
+You approach the security desk, noticing it is locked. It seems that you will need a lock-picking tool to proceed. Perhaps you can search other rooms or investigate the lab of shadows for useful items.
+[Subquest opened] Finding a lock-picking tool may lead to unlocking the security desk, which could contain valuable clues.
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+> east
+[ACTION INTERPRETER] classifying: 'east'...
+[ACTION INTERPRETER] classification=known, action=move, target=east
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Break Room ==
+The break room is a cozy enclave within the lab, filled with the aroma of
+coffee and the sound of a microwave humming. A small table sits in the corner,
+surrounded by chairs, offering a place for researchers to unwind.
+You see: Witness Statement, Email Screenshots, Break Room Table.
+Present: Dr. Mark Thompson, Dr. Jennifer Lee.
+Exits: west, north.
+
+> examine the witness statement
+[ACTION INTERPRETER] classifying: 'examine the witness statement'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Witness Statement
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=4
+
+A typed document detailing an account of an argument overheard in the lab. The words 'argument' and 'Michael' jump out at you.
+
+[CLUE DISCOVERED] Clue 4: A witness statement from Jennifer stating she overheard an argument between Michael and Emily
+
+> examine the email screenshots
+[ACTION INTERPRETER] classifying: 'examine the email screenshots'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Email Screenshots
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+A collection of printed emails that hint at a disagreement. They seem to depict a contentious relationship between Mark and Emily.
+
+[RED HERRING ENCOUNTERED] A series of emails between Mark and Emily discussing personal feelings that escalated before the murder.
+
+> talk to thompson
+[ACTION INTERPRETER] classifying: 'talk to thompson'...
+[ACTION INTERPRETER] classification=known, action=talk, target=thompson
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+"He claims to have been taking inventory in the main office during the murder." Dr. Mark Thompson pauses. "Look, I had no reason to want them dead."
+
+> west
+[ACTION INTERPRETER] classifying: 'west'...
+[ACTION INTERPRETER] classification=known, action=move, target=west
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Entrance Lobby ==
+The entrance lobby of the university research lab is bright and welcoming,
+with sleek modern decor. A bulletin board displays various research
+announcements, and a faint buzz of conversation can be heard in the distance.
+Exits: north, east.
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+> east
+[ACTION INTERPRETER] classifying: 'east'...
+[ACTION INTERPRETER] classification=known, action=move, target=east
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Security Office ==
+The dimly lit security office is filled with monitors displaying various feeds
+from around the labs. The soft glow of the screens highlights the cluttered
+desk, where evidence from the investigation lies scattered.
+You see: Security Camera Footage, Lab Access Records, Security Desk.
+Present: Dr. Michael Reynolds.
+Exits: west, north.
+
+> look
+[ACTION INTERPRETER] classifying: 'look'...
+[ACTION INTERPRETER] classification=known, action=look, target=None
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Security Office ==
+The dimly lit security office is filled with monitors displaying various feeds
+from around the labs. The soft glow of the screens highlights the cluttered
+desk, where evidence from the investigation lies scattered.
+You see: Security Camera Footage, Lab Access Records, Security Desk.
+Present: Dr. Michael Reynolds.
+Exits: west, north.
+
+> accuse reynolds
+[ACTION INTERPRETER] classifying: 'accuse reynolds'...
+[ACTION INTERPRETER] classification=known, action=accuse, target=reynolds
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+You lay out the evidence. Dr. Michael Reynolds stares at the floor, then at the desk, then nowhere at all. "... I didn't think it would come to this," they whisper. The case is closed.
+
+======================================================================
+  CASE CLOSED — You named the killer correctly.
+  Clues discovered: 6
+  Red herrings debunked: 0
+  Total turns: 30
+======================================================================

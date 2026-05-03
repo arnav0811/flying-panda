@@ -1,0 +1,72 @@
+# Exemplar walkthrough script for the Phase 2 demo.
+#
+# Designed against examples/exemplar_world.json — a saved world snapshot.
+# Run with:
+#   uv run python play.py --world examples/exemplar_world.json --scripted demo_inputs/exemplar_run.txt
+#
+# Lines starting with # are comments and are skipped by play.py.
+# This script demonstrates every component of the architecture:
+#
+#   - constituent actions (clue discovery, red herring encounter)
+#   - consistent actions  (movement, examining ambient objects)
+#   - exception actions   (Story Guard blocks attempts to destroy clues)
+#   - novel actions       (Rule Generator JIT-creates new rules + cascade)
+#   - retroactive update  (existing rules updated when new state vars appear)
+#   - winning accusation  (player accuses with enough evidence)
+
+# --- Open the case: look around the entrance lobby ---
+look
+inventory
+
+# --- Move north into the hallway ---
+north
+look
+
+# --- Continue north into Lab of Shadows: clue 1 + suspect Mitchell + a red herring ---
+north
+examine the coffee mug
+talk to mitchell
+examine the methodology notes
+
+# --- A NOVEL ACTION: the player wants to search the lab equipment thoroughly ---
+# The Action Interpreter will classify this as 'novel' because there's no
+# 'search' rule. The Rule Generator will JIT-create one. Watch for cascading
+# preconditions and any retroactive update to existing rules.
+search the lab equipment thoroughly
+
+# --- Move west into the Evidence Room: 2 clues + 1 red herring ---
+west
+look
+examine the toxicology report
+examine the access log
+examine the forensic report
+
+# --- An EXCEPTION ATTEMPT: try to destroy a critical clue ---
+# Story Guard should block (or adapt) this to protect the mystery.
+burn the toxicology report
+
+# --- Move southwest into the Security Office: 2 clues + the criminal ---
+southwest
+examine the security camera footage
+examine the lab access records
+talk to reynolds
+
+# --- Try a SECOND NOVEL ACTION: pick the lock on the security desk ---
+# Should also trigger Rule Generation. May cascade (need lockpicks, or
+# something to leverage the lock with) and update pick_up retroactively.
+pick the lock on the security desk
+
+# --- Move back north and east into Break Room: clue 4 + red herring ---
+north
+east
+examine the witness statement
+examine the email screenshots
+talk to thompson
+
+# --- We now have 6 clues. Time to make the accusation. ---
+# Move back to security_office where Reynolds is, via lobby and hallway.
+west
+north
+east
+look
+accuse reynolds

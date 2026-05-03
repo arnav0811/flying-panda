@@ -1,0 +1,224 @@
+==============================================================================
+  FLYING PANDA — Phase II Walkthrough
+  Setting: a university research lab
+  Victim:  Dr. Emily Carter
+  Killer:  Dr. Michael Reynolds  (revealed at end of investigation)
+  Outcome: LOST  (21 turns, 5 clues discovered)
+==============================================================================
+
+Legend:
+  [USER]                — Free text typed by the player
+  [ACTION INTERPRETER]  — Component 3: classifies input as known/novel/impossible
+  [RULE GENERATOR]      — Component 4: invents new rules + cascading prerequisites
+  [STORY GUARD]         — Component 5: protects the mystery from being broken
+  [SCENE]               — World description shown to player
+  [SYSTEM]              — Engine response to a successful action
+
+--- Turn 0 ---
+[SCENE] == Entrance Lobby ==
+The entrance lobby of the university research lab is bright and welcoming,
+with sleek modern decor. A bulletin board displays various research
+announcements, and a faint buzz of conversation can be heard in the distance.
+Exits: north, east.
+
+--- Turn 1 ---
+[USER] accuse reynolds
+[ACTION INTERPRETER] classification=known, action=accuse, target='reynolds', reason=The input directly corresponds to the available action of accusing an NPC, which is a story-advancing action.
+[STORY GUARD] classification=constituent
+  reasoning: Accusing Dr. Michael Reynolds is a valid action that contributes to the investigation, as it may lead to further dialogue or revelations about his involvement in the case.
+[SYSTEM] You don't have enough evidence to accuse Dr. Michael Reynolds. (0/4 clues required)
+
+--- Turn 2 ---
+[USER] fly to the moon
+[ACTION INTERPRETER] classification=impossible, action=None, target=None, reason=The action of flying to the moon is not feasible within the current game world as the player lacks the ability to fly.
+[SYSTEM] The player cannot fly without wings or a means of flight.
+
+--- Turn 3 ---
+[USER] north
+[ACTION INTERPRETER] classification=known, action=move, target='north', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving north from the entrance lobby does not impact any unresolved clues or red herrings, allowing the investigation to continue.
+[SYSTEM] == Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+--- Turn 4 ---
+[USER] north
+[ACTION INTERPRETER] classification=known, action=move, target='north', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving north in the hallway does not advance any unresolved plot points or clues, but it is a neutral action that keeps the story progressing.
+[SYSTEM] == Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+--- Turn 5 ---
+[USER] look
+[ACTION INTERPRETER] classification=known, action=look, target=None, reason=look command
+[STORY GUARD] classification=consistent
+  reasoning: The action of looking around in the lab of shadows does not advance any plot points but is a neutral action that allows the player to gather more information.
+[SYSTEM] == Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+--- Turn 6 ---
+[USER] burn the coffee mug
+[ACTION INTERPRETER] classification=novel, action=set_fire_to_coffee_mug, target='coffee mug', reason=The player is attempting to perform an action that is not defined in the available actions, specifically setting fire to an object.
+[RULE GENERATOR]
+  Subquest: By burning the coffee mug, you may uncover hidden clues or evidence related to the case, as it could reveal something previously unnoticed.
+  New rules: ['set_fire_to_coffee_mug']
+  Ready to execute: False
+
+--- Turn 7 ---
+[USER] smash the coffee mug with a chair
+[ACTION INTERPRETER] classification=novel, action=smash_coffee_mug_with_chair, target='coffee mug', reason=The action of smashing the coffee mug with a chair is a conceivable action that does not fit into the existing rules.
+[RULE GENERATOR]
+  Subquest: The loud noise from the shattered mug may draw attention, potentially leading to new interactions or discoveries.
+  New rules: ['smash_coffee_mug_with_chair']
+  Ready to execute: False
+
+--- Turn 8 ---
+[USER] examine the coffee mug
+[ACTION INTERPRETER] classification=known, action=examine, target='coffee mug', reason=The input directly corresponds to the action of examining an object, which is an available action in the game.
+[STORY GUARD] classification=constituent, advances_clue_id=1
+  reasoning: Examining the coffee mug will reveal that it has Emily's name on it, which is a critical clue indicating her presence in the lab at the time of her murder.
+[SYSTEM] A ceramic mug with a faded inscription of 'Emily' on the side, stained with a dark liquid. It sits in the coffee station, slightly chipped.
+[CLUE DISCOVERED] Clue 1: A coffee mug with Emily's name on it found in the lab's coffee station
+
+--- Turn 9 ---
+[USER] west
+[ACTION INTERPRETER] classification=known, action=move, target='west', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving west from the lab of shadows does not directly advance any unresolved plot points or clues, but it is a consistent action that allows the player to explore the environment further.
+[SYSTEM] == Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+--- Turn 10 ---
+[USER] south
+[ACTION INTERPRETER] classification=known, action=move, target='south', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving south from the evidence room does not advance or threaten any unresolved plot points, as it is simply a navigation action.
+[SYSTEM] == Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+--- Turn 11 ---
+[USER] threaten mitchell into confessing
+[ACTION INTERPRETER] classification=novel, action=threaten_mitchell_into_confessing, target='mitchell', reason=The action of threatening an NPC to confess is a plausible action but does not directly map to any existing game rules.
+[RULE GENERATOR]
+  Subquest: You have opened up a potential avenue to extract information from Mitchell through intimidation. If successful, he may reveal clues that could aid in solving the murder mystery.
+  New rules: ['threaten_mitchell_into_confessing']
+  Retroactive update: 'talk' -> This update is necessary to allow the player to receive information from Mitchell after threatening him.
+  Ready to execute: False
+
+--- Turn 12 ---
+[USER] south
+[ACTION INTERPRETER] classification=known, action=move, target='south', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving south does not advance any unresolved plot points or clues, but it is a neutral action that simply changes the player's location.
+[SYSTEM] == Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+--- Turn 13 ---
+[USER] east
+[ACTION INTERPRETER] classification=known, action=move, target='east', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving east does not advance any plot points or threaten the story, as it simply changes the player's location without affecting any clues or evidence.
+[SYSTEM] == Security Office ==
+The dimly lit security office is filled with monitors displaying various feeds
+from around the labs. The soft glow of the screens highlights the cluttered
+desk, where evidence from the investigation lies scattered.
+You see: Security Camera Footage, Lab Access Records, Security Desk.
+Present: Dr. Michael Reynolds.
+Exits: west, north.
+
+--- Turn 14 ---
+[USER] kill reynolds
+[ACTION INTERPRETER] classification=impossible, action=None, target='reynolds', reason=The action of killing an NPC is not permitted within the game's mechanics.
+[SYSTEM] The game does not allow for violent actions against NPCs.
+
+--- Turn 15 ---
+[USER] examine the security camera footage
+[ACTION INTERPRETER] classification=known, action=examine, target='security camera footage', reason=The input directly maps to the available action of examining an object.
+[STORY GUARD] classification=constituent, advances_clue_id=2
+  reasoning: Examining the security camera footage will reveal critical evidence regarding Michael's presence at the scene, thus advancing the investigation.
+[SYSTEM] A dusty old tape labeled 'Lab Security - March 5th'. It appears to have been recently reviewed, with a few frame cuts visible.
+[CLUE DISCOVERED] Clue 2: A security camera footage showing Michael leaving the lab shortly after Emily was last seen
+
+--- Turn 16 ---
+[USER] examine the lab access records
+[ACTION INTERPRETER] classification=known, action=examine, target='Lab Access Records', reason=The input directly corresponds to the available action of examining an object.
+[STORY GUARD] classification=constituent, advances_clue_id=5
+  reasoning: Examining the lab access records will reveal critical evidence about Michael's access to the neurotoxin, which is an unresolved clue.
+[SYSTEM] A printed log showing entries and exits from the lab. Michael's access to restricted areas is highlighted, with an unsettling timestamp.
+[CLUE DISCOVERED] Clue 5: Lab records showing Michael had access to the neurotoxin used for the poisoning
+
+--- Turn 17 ---
+[USER] north
+[ACTION INTERPRETER] classification=known, action=move, target='north', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving north from the security office does not advance or threaten any unresolved plot points; it simply changes the player's location.
+[SYSTEM] == Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+--- Turn 18 ---
+[USER] examine the toxicology report
+[ACTION INTERPRETER] classification=known, action=examine, target='toxicology report', reason=The input clearly maps to the action of examining an object in the room.
+[STORY GUARD] classification=constituent, advances_clue_id=3
+  reasoning: Examining the toxicology report will reveal the presence of a rare neurotoxin in Emily's bloodstream, which is a critical clue in the investigation.
+[SYSTEM] A folded report with the title 'Toxicology Analysis Results'. The text is densely packed with medical jargon, but some words stand out ominously.
+[CLUE DISCOVERED] Clue 3: A toxicology report confirming the presence of a rare neurotoxin in Emily's bloodstream
+
+--- Turn 19 ---
+[USER] examine the access log
+[ACTION INTERPRETER] classification=known, action=examine, target='Late-night Access Log', reason=The input directly corresponds to the available action of examining an object in the room.
+[STORY GUARD] classification=constituent, advances_clue_id=6
+  reasoning: Examining the late-night access log will reveal critical evidence that supports the investigation by debunking Michael's alibi.
+[SYSTEM] A digital log file that shows Michael's late-night entry into the lab. The timestamp contradicts his alibi, raising suspicion.
+[CLUE DISCOVERED] Clue 6: A late-night access log showing Michael entered the lab at a time he claimed to be in a meeting
+
+--- Turn 20 ---
+[USER] south
+[ACTION INTERPRETER] classification=known, action=move, target='south', reason=direction word
+[STORY GUARD] classification=consistent
+  reasoning: Moving south from the evidence room does not advance or threaten any unresolved plot points; it simply changes the player's location.
+[SYSTEM] == Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+--- Turn 21 ---
+[USER] accuse mitchell
+[ACTION INTERPRETER] classification=known, action=accuse, target='mitchell', reason=The input directly corresponds to the action of accusing an NPC, which is a defined action in the game.
+[STORY GUARD] classification=constituent
+  reasoning: Accusing Dr. Sarah Mitchell is a valid action that contributes to the narrative progression of the mystery, as it allows for further investigation and dialogue regarding her involvement.
+[SYSTEM] You accuse Dr. Sarah Mitchell. They look at you, stunned, then furious. The evidence doesn't hold up under scrutiny — you've named the wrong person, and the real killer slips away.
+
+[GAME OVER] Outcome: lost

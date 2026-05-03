@@ -1,0 +1,243 @@
+======================================================================
+  FLYING PANDA — Phase II Interactive Mystery
+  Setting: a university research lab
+  Victim:  Dr. Emily Carter
+  Goal:    Find 4+ clues, then accuse the killer.
+  Type 'help' for actions, 'quit' to leave.
+======================================================================
+== Entrance Lobby ==
+The entrance lobby of the university research lab is bright and welcoming,
+with sleek modern decor. A bulletin board displays various research
+announcements, and a faint buzz of conversation can be heard in the distance.
+Exits: north, east.
+
+> accuse reynolds
+[ACTION INTERPRETER] classifying: 'accuse reynolds'...
+[ACTION INTERPRETER] classification=known, action=accuse, target=reynolds
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+You don't have enough evidence to accuse Dr. Michael Reynolds. (0/4 clues required)
+
+> fly to the moon
+[ACTION INTERPRETER] classifying: 'fly to the moon'...
+[ACTION INTERPRETER] classification=impossible, action=None, target=None
+
+The player cannot fly without wings or a means of flight.
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+> look
+[ACTION INTERPRETER] classifying: 'look'...
+[ACTION INTERPRETER] classification=known, action=look, target=None
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+> burn the coffee mug
+[ACTION INTERPRETER] classifying: 'burn the coffee mug'...
+[ACTION INTERPRETER] classification=novel, action=set_fire_to_coffee_mug, target=coffee mug
+[RULE GENERATOR] action is novel — generating rule + cascade...
+[RULE GENERATOR] NEW RULE: 'set_fire_to_coffee_mug' — Attempt to burn the coffee mug using a flame source.
+
+You reach for the coffee mug, contemplating setting it ablaze. However, you notice that you lack a flame source to ignite it. Perhaps you could find a lighter or matches in the Lab of Shadows or nearby rooms.
+[Subquest opened] By burning the coffee mug, you may uncover hidden clues or evidence related to the case, as it could reveal something previously unnoticed.
+
+> smash the coffee mug with a chair
+[ACTION INTERPRETER] classifying: 'smash the coffee mug with a chair'...
+[ACTION INTERPRETER] classification=novel, action=smash_coffee_mug_with_chair, target=coffee mug
+[RULE GENERATOR] action is novel — generating rule + cascade...
+[RULE GENERATOR] NEW RULE: 'smash_coffee_mug_with_chair' — Smash the coffee mug using a chair to create a distraction.
+
+As you prepare to smash the coffee mug with a chair, you realize you need a chair to proceed. Look around the Lab of Shadows for a suitable chair to use in your plan.
+[Subquest opened] The loud noise from the shattered mug may draw attention, potentially leading to new interactions or discoveries.
+
+> examine the coffee mug
+[ACTION INTERPRETER] classifying: 'examine the coffee mug'...
+[ACTION INTERPRETER] classification=known, action=examine, target=coffee mug
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=1
+
+A ceramic mug with a faded inscription of 'Emily' on the side, stained with a dark liquid. It sits in the coffee station, slightly chipped.
+
+[CLUE DISCOVERED] Clue 1: A coffee mug with Emily's name on it found in the lab's coffee station
+
+> west
+[ACTION INTERPRETER] classifying: 'west'...
+[ACTION INTERPRETER] classification=known, action=move, target=west
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+> south
+[ACTION INTERPRETER] classifying: 'south'...
+[ACTION INTERPRETER] classification=known, action=move, target=south
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+> threaten mitchell into confessing
+[ACTION INTERPRETER] classifying: 'threaten mitchell into confessing'...
+[ACTION INTERPRETER] classification=novel, action=threaten_mitchell_into_confessing, target=mitchell
+[RULE GENERATOR] action is novel — generating rule + cascade...
+[RULE GENERATOR] UPDATED RULE: 'talk' — This update is necessary to allow the player to receive information from Mitchell after threatening him.
+[RULE GENERATOR] NEW RULE: 'threaten_mitchell_into_confessing' — Attempt to intimidate Mitchell into revealing information about the murder.
+
+You approach Mitchell with a menacing demeanor, attempting to threaten him into confessing. However, you realize that you need to establish his presence and willingness to talk before this tactic can work effectively.
+[Subquest opened] You have opened up a potential avenue to extract information from Mitchell through intimidation. If successful, he may reveal clues that could aid in solving the murder mystery.
+
+> south
+[ACTION INTERPRETER] classifying: 'south'...
+[ACTION INTERPRETER] classification=known, action=move, target=south
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Hallway ==
+The hallway is long and narrow, lined with doors to various labs and offices.
+Fluorescent lights hum overhead, casting a sterile glow on the beige walls.
+The air feels charged with academic tension.
+Exits: south, north, east.
+
+> east
+[ACTION INTERPRETER] classifying: 'east'...
+[ACTION INTERPRETER] classification=known, action=move, target=east
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Security Office ==
+The dimly lit security office is filled with monitors displaying various feeds
+from around the labs. The soft glow of the screens highlights the cluttered
+desk, where evidence from the investigation lies scattered.
+You see: Security Camera Footage, Lab Access Records, Security Desk.
+Present: Dr. Michael Reynolds.
+Exits: west, north.
+
+> kill reynolds
+[ACTION INTERPRETER] classifying: 'kill reynolds'...
+[ACTION INTERPRETER] classification=impossible, action=None, target=reynolds
+
+The game does not allow for violent actions against NPCs.
+
+> examine the security camera footage
+[ACTION INTERPRETER] classifying: 'examine the security camera footage'...
+[ACTION INTERPRETER] classification=known, action=examine, target=security camera footage
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=2
+
+A dusty old tape labeled 'Lab Security - March 5th'. It appears to have been recently reviewed, with a few frame cuts visible.
+
+[CLUE DISCOVERED] Clue 2: A security camera footage showing Michael leaving the lab shortly after Emily was last seen
+
+> examine the lab access records
+[ACTION INTERPRETER] classifying: 'examine the lab access records'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Lab Access Records
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=5
+
+A printed log showing entries and exits from the lab. Michael's access to restricted areas is highlighted, with an unsettling timestamp.
+
+[CLUE DISCOVERED] Clue 5: Lab records showing Michael had access to the neurotoxin used for the poisoning
+
+> north
+[ACTION INTERPRETER] classifying: 'north'...
+[ACTION INTERPRETER] classification=known, action=move, target=north
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Evidence Room ==
+The evidence room is a stark, sterile space where crucial clues are stored.
+Papers and vials are neatly organized on shelves, but a sense of foreboding
+hangs in the air, hinting at the secrets they contain.
+You see: Toxicology Report, Late-night Access Log, Forensic Report.
+Exits: south, east, southwest.
+
+> examine the toxicology report
+[ACTION INTERPRETER] classifying: 'examine the toxicology report'...
+[ACTION INTERPRETER] classification=known, action=examine, target=toxicology report
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=3
+
+A folded report with the title 'Toxicology Analysis Results'. The text is densely packed with medical jargon, but some words stand out ominously.
+
+[CLUE DISCOVERED] Clue 3: A toxicology report confirming the presence of a rare neurotoxin in Emily's bloodstream
+
+> examine the access log
+[ACTION INTERPRETER] classifying: 'examine the access log'...
+[ACTION INTERPRETER] classification=known, action=examine, target=Late-night Access Log
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent, advances_clue=6
+
+A digital log file that shows Michael's late-night entry into the lab. The timestamp contradicts his alibi, raising suspicion.
+
+[CLUE DISCOVERED] Clue 6: A late-night access log showing Michael entered the lab at a time he claimed to be in a meeting
+
+> south
+[ACTION INTERPRETER] classifying: 'south'...
+[ACTION INTERPRETER] classification=known, action=move, target=south
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=consistent
+
+== Lab of Shadows ==
+In the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls
+as fluorescent lights flicker ominously. This once-bustling research
+environment now feels eerie and abandoned, as if secrets linger in the air.
+You see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.
+Present: Dr. Sarah Mitchell.
+Exits: south, west.
+
+> accuse mitchell
+[ACTION INTERPRETER] classifying: 'accuse mitchell'...
+[ACTION INTERPRETER] classification=known, action=accuse, target=mitchell
+[STORY GUARD] evaluating action...
+[STORY GUARD] classification=constituent
+
+You accuse Dr. Sarah Mitchell. They look at you, stunned, then furious. The evidence doesn't hold up under scrutiny — you've named the wrong person, and the real killer slips away.
+
+======================================================================
+  CASE COLD — You accused the wrong person.
+  The real killer walks free.
+======================================================================

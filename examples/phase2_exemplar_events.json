@@ -1,0 +1,1336 @@
+[
+  {
+    "turn": 0,
+    "type": "scene",
+    "content": "== Entrance Lobby ==\nThe entrance lobby of the university research lab is bright and welcoming,\nwith sleek modern decor. A bulletin board displays various research\nannouncements, and a faint buzz of conversation can be heard in the distance.\nExits: north, east."
+  },
+  {
+    "turn": 1,
+    "type": "user",
+    "content": "look"
+  },
+  {
+    "turn": 1,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "look",
+      "raw_target": null,
+      "resolved_target_id": null,
+      "resolved_target_type": null,
+      "story_advancing": false,
+      "reasoning": "look command",
+      "impossible_reason": null,
+      "player_input_raw": "look"
+    }
+  },
+  {
+    "turn": 1,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The action of looking around in the entrance lobby does not advance or threaten any unresolved plot points, as it is a neutral action.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 1,
+    "type": "system",
+    "content": "== Entrance Lobby ==\nThe entrance lobby of the university research lab is bright and welcoming,\nwith sleek modern decor. A bulletin board displays various research\nannouncements, and a faint buzz of conversation can be heard in the distance.\nExits: north, east."
+  },
+  {
+    "turn": 2,
+    "type": "user",
+    "content": "inventory"
+  },
+  {
+    "turn": 2,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "inventory",
+      "raw_target": null,
+      "resolved_target_id": null,
+      "resolved_target_type": null,
+      "story_advancing": false,
+      "reasoning": "inventory command",
+      "impossible_reason": null,
+      "player_input_raw": "inventory"
+    }
+  },
+  {
+    "turn": 2,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The action of checking the inventory does not advance or threaten any plot points, as it simply allows the player to review their collected items without affecting the ongoing investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 2,
+    "type": "system",
+    "content": "You're not carrying anything."
+  },
+  {
+    "turn": 3,
+    "type": "user",
+    "content": "north"
+  },
+  {
+    "turn": 3,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "north",
+      "resolved_target_id": "north",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "north"
+    }
+  },
+  {
+    "turn": 3,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving north from the entrance lobby does not advance any unresolved plot points or clues, but it is a valid action within the game.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 3,
+    "type": "system",
+    "content": "== Hallway ==\nThe hallway is long and narrow, lined with doors to various labs and offices.\nFluorescent lights hum overhead, casting a sterile glow on the beige walls.\nThe air feels charged with academic tension.\nExits: south, north, east."
+  },
+  {
+    "turn": 4,
+    "type": "user",
+    "content": "look"
+  },
+  {
+    "turn": 4,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "look",
+      "raw_target": null,
+      "resolved_target_id": null,
+      "resolved_target_type": null,
+      "story_advancing": false,
+      "reasoning": "look command",
+      "impossible_reason": null,
+      "player_input_raw": "look"
+    }
+  },
+  {
+    "turn": 4,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The action of looking around the hallway does not advance or threaten any plot points, as it is a neutral action that allows the player to observe their surroundings.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 4,
+    "type": "system",
+    "content": "== Hallway ==\nThe hallway is long and narrow, lined with doors to various labs and offices.\nFluorescent lights hum overhead, casting a sterile glow on the beige walls.\nThe air feels charged with academic tension.\nExits: south, north, east."
+  },
+  {
+    "turn": 5,
+    "type": "user",
+    "content": "north"
+  },
+  {
+    "turn": 5,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "north",
+      "resolved_target_id": "north",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "north"
+    }
+  },
+  {
+    "turn": 5,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving north in the hallway does not advance any unresolved plot points or interact with any clues or red herrings, making it a neutral action.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 5,
+    "type": "system",
+    "content": "== Lab of Shadows ==\nIn the cold, sterile lab of Dr. Emily Carter, shadows dance across the walls\nas fluorescent lights flicker ominously. This once-bustling research\nenvironment now feels eerie and abandoned, as if secrets linger in the air.\nYou see: Coffee Mug, Methodology Notes, Coffee Station, Lab Equipment.\nPresent: Dr. Sarah Mitchell.\nExits: south, west."
+  },
+  {
+    "turn": 6,
+    "type": "user",
+    "content": "examine the coffee mug"
+  },
+  {
+    "turn": 6,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "the coffee mug",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the action of examining an object, which is a known action in the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "coffee_mug_emily",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the coffee mug"
+    }
+  },
+  {
+    "turn": 6,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": 1,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the coffee mug will reveal that it has Emily's name on it, which is a critical clue pointing to her presence in the lab before her death.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 6,
+    "type": "system",
+    "content": "A ceramic mug with a faded inscription of 'Emily' on the side, stained with a dark liquid. It sits in the coffee station, slightly chipped."
+  },
+  {
+    "turn": 6,
+    "type": "clue_discovered",
+    "content": {
+      "clue_id": 1,
+      "clue": {
+        "id": 1,
+        "description": "A coffee mug with Emily's name on it found in the lab's coffee station",
+        "points_to": "Indicates Emily was in the lab at the time of her murder.",
+        "requires_clue": null,
+        "discovery_method": "Witnesses saw Emily in the lab before her death."
+      }
+    }
+  },
+  {
+    "turn": 7,
+    "type": "user",
+    "content": "talk to mitchell"
+  },
+  {
+    "turn": 7,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "talk",
+      "raw_target": "mitchell",
+      "story_advancing": false,
+      "reasoning": "The input 'talk to mitchell' directly corresponds to the available action of talking to an NPC.",
+      "impossible_reason": null,
+      "resolved_target_id": "mitchell",
+      "resolved_target_type": "npc",
+      "player_input_raw": "talk to mitchell"
+    }
+  },
+  {
+    "turn": 7,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Talking to Dr. Sarah Mitchell, a suspect, may provide valuable information or lead to further clues, thus advancing the investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 7,
+    "type": "system",
+    "content": "\"She claims she was in the library studying during the murder.\" Dr. Sarah Mitchell pauses. \"Look, I had no reason to want them dead.\""
+  },
+  {
+    "turn": 8,
+    "type": "user",
+    "content": "examine the methodology notes"
+  },
+  {
+    "turn": 8,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "methodology_notes_jennifer",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the action of examining an object, which is a known action in the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "methodology_notes_jennifer",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the methodology notes"
+    }
+  },
+  {
+    "turn": 8,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": "rh3",
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The player is examining a red herring, which will now be encountered but does not advance the main plot or reveal any clues.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 8,
+    "type": "system",
+    "content": "A stack of notes detailing various research methodologies. They are scribbled with comments suggesting disagreements but lack context."
+  },
+  {
+    "turn": 8,
+    "type": "red_herring_encountered",
+    "content": {
+      "id": "rh3",
+      "description": "A lab report with Jennifer's notes was found crumpled in Emily's wastebasket with annotations about Emily's experiments.",
+      "planted_evidence": "The notes appear to indicate disagreements on methodologies that could have led to a confrontation.",
+      "target_suspect": "Dr. Jennifer Lee",
+      "fragility": 1,
+      "debunk_method": "Forensic analysis shows that the crumpled notes were dated weeks before the murder and had nothing to do with the current project, demonstrating no immediate motive."
+    }
+  },
+  {
+    "turn": 9,
+    "type": "user",
+    "content": "search the lab equipment thoroughly"
+  },
+  {
+    "turn": 9,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "novel",
+      "action_name": "search_lab_equipment",
+      "raw_target": "lab equipment",
+      "story_advancing": false,
+      "reasoning": "The input describes a specific action of searching that does not match any existing rules but is a plausible action in the context of the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "lab_equipment",
+      "resolved_target_type": "object",
+      "player_input_raw": "search the lab equipment thoroughly"
+    }
+  },
+  {
+    "turn": 9,
+    "type": "rule_generator",
+    "content": {
+      "plan_summary": "You have discovered a hidden key that may unlock new areas of the facility. Investigate further to find out what it opens.",
+      "narrative": "As you begin to search the lab equipment thoroughly, you notice a faint glimmer beneath some papers. Digging deeper, you uncover a small, rusted key that might be significant. It seems to suggest there are more secrets hidden within the Lab of Shadows.",
+      "new_rules": [
+        "search_lab_equipment"
+      ],
+      "new_objects": [
+        "hidden_lab_key"
+      ],
+      "new_rooms": [],
+      "updated_rules": [],
+      "ready_to_execute": true
+    }
+  },
+  {
+    "turn": 9,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Searching the lab equipment thoroughly does not directly advance any unresolved clues or red herrings, but it is a logical action that could yield useful information without disrupting the ongoing investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 10,
+    "type": "user",
+    "content": "west"
+  },
+  {
+    "turn": 10,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "west",
+      "resolved_target_id": "west",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "west"
+    }
+  },
+  {
+    "turn": 10,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving west from the lab of shadows does not advance any unresolved plot points or clues, and it is a neutral action that maintains the current state of the investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 10,
+    "type": "system",
+    "content": "== Evidence Room ==\nThe evidence room is a stark, sterile space where crucial clues are stored.\nPapers and vials are neatly organized on shelves, but a sense of foreboding\nhangs in the air, hinting at the secrets they contain.\nYou see: Toxicology Report, Late-night Access Log, Forensic Report.\nExits: south, east, southwest."
+  },
+  {
+    "turn": 11,
+    "type": "user",
+    "content": "look"
+  },
+  {
+    "turn": 11,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "look",
+      "raw_target": null,
+      "resolved_target_id": null,
+      "resolved_target_type": null,
+      "story_advancing": false,
+      "reasoning": "look command",
+      "impossible_reason": null,
+      "player_input_raw": "look"
+    }
+  },
+  {
+    "turn": 11,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The action of looking around in the evidence room does not advance any plot points or uncover new information, but it is a neutral action that fits within the context of the investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 11,
+    "type": "system",
+    "content": "== Evidence Room ==\nThe evidence room is a stark, sterile space where crucial clues are stored.\nPapers and vials are neatly organized on shelves, but a sense of foreboding\nhangs in the air, hinting at the secrets they contain.\nYou see: Toxicology Report, Late-night Access Log, Forensic Report.\nExits: south, east, southwest."
+  },
+  {
+    "turn": 12,
+    "type": "user",
+    "content": "examine the toxicology report"
+  },
+  {
+    "turn": 12,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "toxicology report",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the action of examining an object, which is a valid action in the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "toxicology_report",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the toxicology report"
+    }
+  },
+  {
+    "turn": 12,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": 3,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the toxicology report reveals a critical clue confirming that Emily was poisoned, which is necessary for advancing the investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 12,
+    "type": "system",
+    "content": "A folded report with the title 'Toxicology Analysis Results'. The text is densely packed with medical jargon, but some words stand out ominously."
+  },
+  {
+    "turn": 12,
+    "type": "clue_discovered",
+    "content": {
+      "clue_id": 3,
+      "clue": {
+        "id": 3,
+        "description": "A toxicology report confirming the presence of a rare neurotoxin in Emily's bloodstream",
+        "points_to": "Confirms that Emily was poisoned.",
+        "requires_clue": 2,
+        "discovery_method": "Detective receives lab results during the investigation."
+      }
+    }
+  },
+  {
+    "turn": 13,
+    "type": "user",
+    "content": "examine the access log"
+  },
+  {
+    "turn": 13,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "Late-night Access Log",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the available action of examining an object in the room.",
+      "impossible_reason": null,
+      "resolved_target_id": "access_log_michael",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the access log"
+    }
+  },
+  {
+    "turn": 13,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": 6,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the access log will reveal critical evidence that supports the investigation into Michael's alibi, thus advancing the plot.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 13,
+    "type": "system",
+    "content": "A digital log file that shows Michael's late-night entry into the lab. The timestamp contradicts his alibi, raising suspicion."
+  },
+  {
+    "turn": 13,
+    "type": "clue_discovered",
+    "content": {
+      "clue_id": 6,
+      "clue": {
+        "id": 6,
+        "description": "A late-night access log showing Michael entered the lab at a time he claimed to be in a meeting",
+        "points_to": "Debunks Michael's alibi.",
+        "requires_clue": 5,
+        "discovery_method": "Detective checks access logs after uncovering Michael's motive."
+      }
+    }
+  },
+  {
+    "turn": 14,
+    "type": "user",
+    "content": "examine the forensic report"
+  },
+  {
+    "turn": 14,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "Forensic Report",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the action of examining an object, which is a valid action in the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "forensic_report_neurotoxin",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the forensic report"
+    }
+  },
+  {
+    "turn": 14,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": "rh1",
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the forensic report introduces the red herring about the neurotoxin, which has not yet been encountered, thus advancing the plot.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 14,
+    "type": "system",
+    "content": "A detailed forensic analysis that outlines traces found in the coffee cup. It seems to point in a different direction than expected."
+  },
+  {
+    "turn": 14,
+    "type": "red_herring_encountered",
+    "content": {
+      "id": "rh1",
+      "description": "A coffee cup with Sarah's fingerprints was found near Emily's desk.",
+      "planted_evidence": "The forensic report indicates that the coffee cup had traces of the rare neurotoxin.",
+      "target_suspect": "Dr. Sarah Mitchell",
+      "fragility": 2,
+      "debunk_method": "The detective finds security footage showing Sarah leaving her coffee cup in the break room well before the murder occurred, disproving any connection."
+    }
+  },
+  {
+    "turn": 15,
+    "type": "user",
+    "content": "burn the toxicology report"
+  },
+  {
+    "turn": 15,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "novel",
+      "action_name": "burn_toxicology_report",
+      "raw_target": "toxicology report",
+      "story_advancing": false,
+      "reasoning": "The player is attempting to perform an action that is not defined in the available actions but is a conceivable action within the context of the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "toxicology_report",
+      "resolved_target_type": "object",
+      "player_input_raw": "burn the toxicology report"
+    }
+  },
+  {
+    "turn": 15,
+    "type": "rule_generator",
+    "content": {
+      "plan_summary": "To burn the toxicology report, you must first find a fire source in the evidence room or your inventory. Look around for something that can ignite it.",
+      "narrative": "As you reach for the toxicology report, you realize that you need a fire source to burn it. The evidence room feels cold and sterile, and you scan your surroundings for anything that could start a flame.",
+      "new_rules": [
+        "burn_toxicology_report"
+      ],
+      "new_objects": [],
+      "new_rooms": [],
+      "updated_rules": [],
+      "ready_to_execute": false
+    }
+  },
+  {
+    "turn": 16,
+    "type": "user",
+    "content": "southwest"
+  },
+  {
+    "turn": 16,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "southwest",
+      "resolved_target_id": "southwest",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "southwest"
+    }
+  },
+  {
+    "turn": 16,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The action of moving southwest does not advance any unresolved plot points or clues, and it does not threaten the story's progression.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 16,
+    "type": "system",
+    "content": "== Security Office ==\nThe dimly lit security office is filled with monitors displaying various feeds\nfrom around the labs. The soft glow of the screens highlights the cluttered\ndesk, where evidence from the investigation lies scattered.\nYou see: Security Camera Footage, Lab Access Records, Security Desk.\nPresent: Dr. Michael Reynolds.\nExits: west, north."
+  },
+  {
+    "turn": 17,
+    "type": "user",
+    "content": "examine the security camera footage"
+  },
+  {
+    "turn": 17,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "security camera footage",
+      "story_advancing": false,
+      "reasoning": "The input directly maps to the examine action for the security camera footage object.",
+      "impossible_reason": null,
+      "resolved_target_id": "security_camera_footage",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the security camera footage"
+    }
+  },
+  {
+    "turn": 17,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": 2,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the security camera footage will reveal Clue 2, which is critical to understanding Michael's presence at the scene.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 17,
+    "type": "system",
+    "content": "A dusty old tape labeled 'Lab Security - March 5th'. It appears to have been recently reviewed, with a few frame cuts visible."
+  },
+  {
+    "turn": 17,
+    "type": "clue_discovered",
+    "content": {
+      "clue_id": 2,
+      "clue": {
+        "id": 2,
+        "description": "A security camera footage showing Michael leaving the lab shortly after Emily was last seen",
+        "points_to": "Suggests that Michael was present at the scene.",
+        "requires_clue": 1,
+        "discovery_method": "Detective reviews lab security footage."
+      }
+    }
+  },
+  {
+    "turn": 18,
+    "type": "user",
+    "content": "examine the lab access records"
+  },
+  {
+    "turn": 18,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "Lab Access Records",
+      "story_advancing": false,
+      "reasoning": "The input 'examine the lab access records' directly corresponds to the available action of examining an object.",
+      "impossible_reason": null,
+      "resolved_target_id": "lab_records_michael",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the lab access records"
+    }
+  },
+  {
+    "turn": 18,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": 5,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the lab access records will reveal that Michael had access to the neurotoxin used for the poisoning, which is a critical clue in the investigation.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 18,
+    "type": "system",
+    "content": "A printed log showing entries and exits from the lab. Michael's access to restricted areas is highlighted, with an unsettling timestamp."
+  },
+  {
+    "turn": 18,
+    "type": "clue_discovered",
+    "content": {
+      "clue_id": 5,
+      "clue": {
+        "id": 5,
+        "description": "Lab records showing Michael had access to the neurotoxin used for the poisoning",
+        "points_to": "Indicates Michael had means to commit the murder.",
+        "requires_clue": 4,
+        "discovery_method": "Detective requests access logs from lab."
+      }
+    }
+  },
+  {
+    "turn": 19,
+    "type": "user",
+    "content": "talk to reynolds"
+  },
+  {
+    "turn": 19,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "talk",
+      "raw_target": "reynolds",
+      "story_advancing": false,
+      "reasoning": "The input 'talk to reynolds' directly maps to the available action of talking to the NPC Dr. Michael Reynolds.",
+      "impossible_reason": null,
+      "resolved_target_id": "reynolds",
+      "resolved_target_type": "npc",
+      "player_input_raw": "talk to reynolds"
+    }
+  },
+  {
+    "turn": 19,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Talking to Dr. Michael Reynolds is a critical action that could lead to new information about the case, especially given his status as a suspect.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 19,
+    "type": "system",
+    "content": "\"He states he was in a meeting, confirmed by several colleagues.\" Dr. Michael Reynolds pauses. \"Look, I had no reason to want them dead.\""
+  },
+  {
+    "turn": 20,
+    "type": "user",
+    "content": "pick the lock on the security desk"
+  },
+  {
+    "turn": 20,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "novel",
+      "action_name": "pick_lock_security_desk",
+      "raw_target": "security desk",
+      "story_advancing": false,
+      "reasoning": "The action of picking the lock on the security desk is not defined in the available actions, making it a novel action.",
+      "impossible_reason": null,
+      "resolved_target_id": "desk_security_office",
+      "resolved_target_type": "object",
+      "player_input_raw": "pick the lock on the security desk"
+    }
+  },
+  {
+    "turn": 20,
+    "type": "rule_generator",
+    "content": {
+      "plan_summary": "Finding a lock-picking tool may lead to unlocking the security desk, which could contain valuable clues.",
+      "narrative": "You approach the security desk, noticing it is locked. It seems that you will need a lock-picking tool to proceed. Perhaps you can search other rooms or investigate the lab of shadows for useful items.",
+      "new_rules": [
+        "pick_lock_security_desk"
+      ],
+      "new_objects": [],
+      "new_rooms": [],
+      "updated_rules": [],
+      "ready_to_execute": false
+    }
+  },
+  {
+    "turn": 21,
+    "type": "user",
+    "content": "north"
+  },
+  {
+    "turn": 21,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "north",
+      "resolved_target_id": "north",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "north"
+    }
+  },
+  {
+    "turn": 21,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving north from the security office does not directly advance or threaten any unresolved plot points, making it a neutral action.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 21,
+    "type": "system",
+    "content": "== Evidence Room ==\nThe evidence room is a stark, sterile space where crucial clues are stored.\nPapers and vials are neatly organized on shelves, but a sense of foreboding\nhangs in the air, hinting at the secrets they contain.\nYou see: Toxicology Report, Late-night Access Log, Forensic Report.\nExits: south, east, southwest."
+  },
+  {
+    "turn": 22,
+    "type": "user",
+    "content": "east"
+  },
+  {
+    "turn": 22,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "east",
+      "resolved_target_id": "east",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "east"
+    }
+  },
+  {
+    "turn": 22,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving east from the evidence room does not affect any unresolved plot points and is a neutral action.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 22,
+    "type": "system",
+    "content": "== Break Room ==\nThe break room is a cozy enclave within the lab, filled with the aroma of\ncoffee and the sound of a microwave humming. A small table sits in the corner,\nsurrounded by chairs, offering a place for researchers to unwind.\nYou see: Witness Statement, Email Screenshots, Break Room Table.\nPresent: Dr. Mark Thompson, Dr. Jennifer Lee.\nExits: west, north."
+  },
+  {
+    "turn": 23,
+    "type": "user",
+    "content": "examine the witness statement"
+  },
+  {
+    "turn": 23,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "Witness Statement",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the available action of examining an object.",
+      "impossible_reason": null,
+      "resolved_target_id": "witness_statement_jennifer",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the witness statement"
+    }
+  },
+  {
+    "turn": 23,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": 4,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the witness statement from Jennifer will reveal important information about the argument between Michael and Emily, which is a crucial unresolved clue.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 23,
+    "type": "system",
+    "content": "A typed document detailing an account of an argument overheard in the lab. The words 'argument' and 'Michael' jump out at you."
+  },
+  {
+    "turn": 23,
+    "type": "clue_discovered",
+    "content": {
+      "clue_id": 4,
+      "clue": {
+        "id": 4,
+        "description": "A witness statement from Jennifer stating she overheard an argument between Michael and Emily",
+        "points_to": "Points to a motive for Michael to want to harm Emily.",
+        "requires_clue": 3,
+        "discovery_method": "Detective interviews lab staff."
+      }
+    }
+  },
+  {
+    "turn": 24,
+    "type": "user",
+    "content": "examine the email screenshots"
+  },
+  {
+    "turn": 24,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "examine",
+      "raw_target": "Email Screenshots",
+      "story_advancing": false,
+      "reasoning": "The input directly corresponds to the action of examining an object, which is available in the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "email_screenshots_mark",
+      "resolved_target_type": "object",
+      "player_input_raw": "examine the email screenshots"
+    }
+  },
+  {
+    "turn": 24,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": "rh2",
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Examining the email screenshots reveals a red herring that can now be encountered, but does not advance any clues.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 24,
+    "type": "system",
+    "content": "A collection of printed emails that hint at a disagreement. They seem to depict a contentious relationship between Mark and Emily."
+  },
+  {
+    "turn": 24,
+    "type": "red_herring_encountered",
+    "content": {
+      "id": "rh2",
+      "description": "A series of emails between Mark and Emily discussing personal feelings that escalated before the murder.",
+      "planted_evidence": "Screenshots of the emails hinting at an argument over Emily's 'dismissive attitude' towards Mark's contributions.",
+      "target_suspect": "Dr. Mark Thompson",
+      "fragility": 3,
+      "debunk_method": "The detective uncovers the full email thread indicating Mark was actually offering to help Emily with her project, revealing no animosity and proving the emails were taken out of context."
+    }
+  },
+  {
+    "turn": 25,
+    "type": "user",
+    "content": "talk to thompson"
+  },
+  {
+    "turn": 25,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "talk",
+      "raw_target": "thompson",
+      "story_advancing": false,
+      "reasoning": "The input 'talk to thompson' directly maps to the available action of talking to an NPC.",
+      "impossible_reason": null,
+      "resolved_target_id": "thompson",
+      "resolved_target_type": "npc",
+      "player_input_raw": "talk to thompson"
+    }
+  },
+  {
+    "turn": 25,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Talking to Dr. Mark Thompson does not advance any unresolved plot points but is a valid action that may provide additional context or information.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 25,
+    "type": "system",
+    "content": "\"He claims to have been taking inventory in the main office during the murder.\" Dr. Mark Thompson pauses. \"Look, I had no reason to want them dead.\""
+  },
+  {
+    "turn": 26,
+    "type": "user",
+    "content": "west"
+  },
+  {
+    "turn": 26,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "west",
+      "resolved_target_id": "west",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "west"
+    }
+  },
+  {
+    "turn": 26,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving west does not advance any unresolved plot points or clues, and simply changes the player's location.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 26,
+    "type": "system",
+    "content": "== Entrance Lobby ==\nThe entrance lobby of the university research lab is bright and welcoming,\nwith sleek modern decor. A bulletin board displays various research\nannouncements, and a faint buzz of conversation can be heard in the distance.\nExits: north, east."
+  },
+  {
+    "turn": 27,
+    "type": "user",
+    "content": "north"
+  },
+  {
+    "turn": 27,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "north",
+      "resolved_target_id": "north",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "north"
+    }
+  },
+  {
+    "turn": 27,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving north does not advance or threaten any unresolved plot points, as all clues have been discovered and there are no immediate threats in the current state.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 27,
+    "type": "system",
+    "content": "== Hallway ==\nThe hallway is long and narrow, lined with doors to various labs and offices.\nFluorescent lights hum overhead, casting a sterile glow on the beige walls.\nThe air feels charged with academic tension.\nExits: south, north, east."
+  },
+  {
+    "turn": 28,
+    "type": "user",
+    "content": "east"
+  },
+  {
+    "turn": 28,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "move",
+      "raw_target": "east",
+      "resolved_target_id": "east",
+      "resolved_target_type": "direction",
+      "story_advancing": false,
+      "reasoning": "direction word",
+      "impossible_reason": null,
+      "player_input_raw": "east"
+    }
+  },
+  {
+    "turn": 28,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Moving east does not advance or threaten any unresolved plot points, as the player is simply navigating the environment.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 28,
+    "type": "system",
+    "content": "== Security Office ==\nThe dimly lit security office is filled with monitors displaying various feeds\nfrom around the labs. The soft glow of the screens highlights the cluttered\ndesk, where evidence from the investigation lies scattered.\nYou see: Security Camera Footage, Lab Access Records, Security Desk.\nPresent: Dr. Michael Reynolds.\nExits: west, north."
+  },
+  {
+    "turn": 29,
+    "type": "user",
+    "content": "look"
+  },
+  {
+    "turn": 29,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "look",
+      "raw_target": null,
+      "resolved_target_id": null,
+      "resolved_target_type": null,
+      "story_advancing": false,
+      "reasoning": "look command",
+      "impossible_reason": null,
+      "player_input_raw": "look"
+    }
+  },
+  {
+    "turn": 29,
+    "type": "story_guard",
+    "content": {
+      "classification": "consistent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "The action of looking around in the security office does not advance or threaten any plot points, as it is a neutral action in the current context.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 29,
+    "type": "system",
+    "content": "== Security Office ==\nThe dimly lit security office is filled with monitors displaying various feeds\nfrom around the labs. The soft glow of the screens highlights the cluttered\ndesk, where evidence from the investigation lies scattered.\nYou see: Security Camera Footage, Lab Access Records, Security Desk.\nPresent: Dr. Michael Reynolds.\nExits: west, north."
+  },
+  {
+    "turn": 30,
+    "type": "user",
+    "content": "accuse reynolds"
+  },
+  {
+    "turn": 30,
+    "type": "action_interpreter",
+    "content": {
+      "classification": "known",
+      "action_name": "accuse",
+      "raw_target": "reynolds",
+      "story_advancing": true,
+      "reasoning": "The player is attempting to accuse Dr. Michael Reynolds of being the murderer, which is a defined action in the game.",
+      "impossible_reason": null,
+      "resolved_target_id": "reynolds",
+      "resolved_target_type": "npc",
+      "player_input_raw": "accuse reynolds"
+    }
+  },
+  {
+    "turn": 30,
+    "type": "story_guard",
+    "content": {
+      "classification": "constituent",
+      "advances_clue_id": null,
+      "advances_red_herring_id": null,
+      "debunks_red_herring_id": null,
+      "exception_threat": null,
+      "intervention": null,
+      "intervention_narrative": null,
+      "reasoning": "Accusing Dr. Michael Reynolds is a valid action that contributes to the ongoing investigation and does not disrupt any unresolved plot points.",
+      "skip_attempt": false
+    }
+  },
+  {
+    "turn": 30,
+    "type": "system",
+    "content": "You lay out the evidence. Dr. Michael Reynolds stares at the floor, then at the desk, then nowhere at all. \"... I didn't think it would come to this,\" they whisper. The case is closed."
+  },
+  {
+    "turn": 30,
+    "type": "game_over",
+    "content": {
+      "outcome": "won"
+    }
+  }
+]
